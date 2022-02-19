@@ -1,0 +1,28 @@
+# This CITATION.cff file was generated with cffinit.
+
+cff-version: 1.2.0
+title: xgi-data
+message: 'If you use this data, please cite it.'
+type: dataset
+authors:
+  - given-names: Nicholas
+    family-names: Landry
+    email: nicholas.landry.91@gmail.com
+    affiliation: University of Colorado Boulder
+    orcid: 'https://orcid.org/0000-0003-1270-4980'
+  - given-names: Leo
+    family-names: Torres
+    email: leo@leotrs.com
+    affiliation: Max Planck Institute
+  - given-names: Maxime
+    family-names: Lucas
+    email: maxime.lucas@isi.it
+    affiliation: ISI Foundation
+  - given-names: Iacopo
+    family-names: Iacopini
+    email: iacopoiacopini@gmail.com
+    affiliation: Central European University
+  - given-names: Giovanni
+    family-names: Petri
+    email: giovanni.petri@isi.it
+    affiliation: ISI Foundation

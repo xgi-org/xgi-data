@@ -16,34 +16,40 @@ def readScHoLPData(edge_size_file, member_ID_file):
         for index in range(len(sizes)):
             edge = list()
             edge_size = int(sizes[index])
-            for i in range(member_index, member_index+edge_size):
-                member = int(members[i])
+            for i in range(member_index, member_index + edge_size):
+                member = members[i]
                 edge.append(member)
             edgelist.append(tuple(edge))
             member_index += edge_size
     return edgelist
 
+
 def readScHoLPNodeLabels(node_labels_file, delimiter):
     label_dict = dict()
     with open(node_labels_file) as label_data:
-        # lines = csv.reader(label_data)
         for line in label_data:
             s = line.split(delimiter, 1)
-            label_dict[int(s[0])] = s[1].rstrip('\n')
+            label_dict[s[0]] = s[1].rstrip("\n")
     return label_dict
 
-def read_SCHOLP_dates(timestamp_file, time_unit="days"):
-    then = datetime(1, 1, 1)
+
+def read_SCHOLP_dates(
+    timestamp_file, reference_time=datetime(1, 1, 1), time_unit="days"
+):
+
     time_dict = dict()
     with open(timestamp_file) as time_data:
         lines = time_data.read().splitlines()
         for i in range(len(lines)):
             if time_unit == "days":
-                time = then + timedelta(days=int(lines[i]))
+                time = reference_time + timedelta(days=int(lines[i]))
             elif time_unit == "seconds":
-                time = then + timedelta(seconds=int(lines[i])/1000)
+                time = reference_time + timedelta(seconds=int(lines[i]))
+            elif time_unit == "milliseconds":
+                time = reference_time + timedelta(seconds=int(lines[i]) / 1000)
             time_dict[i] = time.isoformat()
     return time_dict
+
 
 def write_hypergraph_json(H, path):
     """
@@ -73,10 +79,12 @@ def write_hypergraph_json(H, path):
     data["hypergraph"].update(H._hypergraph)
 
     # get node data
-    data["nodes"] = {id : H._node_attr[id] for id in H.nodes}
+    data["nodes"] = {id: H._node_attr[id] for id in H.nodes}
 
     # hyperedge list
-    data["hyperedges"] = {id : {"members" : tuple(H.edges.members(id)), **H.edges[id]} for id in H.edges}
+    data["hyperedges"] = {
+        id: {"members": tuple(H.edges.members(id)), **H.edges[id]} for id in H.edges
+    }
 
     datastring = json.dumps(data)
 

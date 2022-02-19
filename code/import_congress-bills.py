@@ -1,16 +1,19 @@
-from ctypes import util
-from platform import node
+import matplotlib.pyplot as plt
 import utilities
 import os
 import xgi
+import numpy as np
+
+output_stats = True
+output_file = False
 
 data_folder = "Data"
 
 dataset_folder = "congress-bills"
-size_file = "congress-bills-nverts.txt"
-member_file = "congress-bills-simplices.txt"
-labels_file = "congress-bills-node-labels.txt"
-times_file = "congress-bills-times.txt"
+size_file = "congress-bills-full-nverts.txt"
+member_file = "congress-bills-full-simplices.txt"
+labels_file = "congress-bills-full-node-labels.txt"
+times_file = "congress-bills-full-times.txt"
 
 hyperedge_size_file = os.path.join(data_folder, dataset_folder, size_file)
 member_ID_file = os.path.join(data_folder, dataset_folder, member_file)
@@ -32,6 +35,31 @@ for label, name in node_labels.items():
     H.nodes[label].update({"name": name})
 
 for label, date in edge_times.items():
-    H.edges[label].update({"date": date})
+    H.edges[label].update({"timestamp": date})
 
-utilities.write_hypergraph_json(H, os.path.join(data_folder, dataset_folder, "congress-bills.json"))
+if output_stats:
+    print(H.shape)
+
+    plt.figure(figsize=(8, 4))
+    plt.subplot(121)
+
+    degrees, counts = np.unique([H.degree(n) for n in H.nodes], return_counts=True)
+    plt.loglog(degrees, counts / H.number_of_nodes(), "ko", markersize=2)
+    plt.title("Degree distribution")
+    plt.xlabel(r"$k$", fontsize=16)
+    plt.ylabel(r"$P(k)$", fontsize=16)
+    plt.subplot(122)
+    sizes, counts = np.unique([H.edge_size(e) for e in H.edges], return_counts=True)
+    plt.loglog(sizes, counts / H.number_of_edges(), "ko", markersize=2)
+    plt.title("Edge size distribution")
+    plt.xlabel(r"$m$", fontsize=16)
+    plt.ylabel(r"$P(m)$", fontsize=16)
+    plt.tight_layout()
+    plt.savefig("data/congress-bills/stats.png", dpi=300)
+    plt.show()
+
+
+if output_file:
+    utilities.write_hypergraph_json(
+        H, os.path.join(data_folder, dataset_folder, "congress-bills.json")
+    )
