@@ -1,4 +1,4 @@
-# xgi-data
+# XGI-DATA
  
 This is a repository of openly available hypergraph datasets in JSON format with documentation more extensively describing the datasets. There is also a rudimentary inspection script for checking that datasets are in the proper format. This is loosely inspired by [Datasheets for Datasets](https://arxiv.org/abs/1803.09010) by Gebru et al.
 
@@ -18,8 +18,14 @@ All IDs are strings but can be converted to other types if desired.
 These datasets have been taken from the following sources:
 * [Data! by Austin Benson](https://www.cs.cornell.edu/~arb/data/)
 
+## Repository Description
+The `code` folder contains the scripts used to convert hypergraph datasets into a more standard format and the JSON inspection script. The `data` folder contains the datasets, with each folder containing a README describing the dataset and the dataset in JSON format.
+
 ## Checking dataset format
 Run the following command:
 ```
 python inspect_json.py filepath.json
 ```
+
+## Funding
+The XGI-DATA package has been supported by NSF Grant 2121905, ["HNDS-I: Using Hypergraphs to Study Spreading Processes in Complex Social Networks"](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2121905).
