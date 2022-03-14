@@ -10,8 +10,18 @@ The email dataset was later purchased by Leslie Kaelbling at MIT, and turned out
 
 ## Statistics
 Some basic statistics of this dataset are:
-* number of nodes: 149
+* number of nodes: 148
 * number of timestamped hyperedges: 10,885
+* distribution of the connected components:
+<center>
+
+| Component Size  | Number |
+| ----- | ---- |
+| 143 | 1 |
+| 1 | 5 |
+</center>
+
+* degree and edge size distributions:
 <center>
 <img src="stats.png" alt="hypergraph statistics" style="width:75%">
 </center>

@@ -9,6 +9,16 @@ This is a temporal hypergraph dataset, which here means a sequence of timestampe
 Some basic statistics of this dataset are:
 * number of nodes: 1,005
 * number of timestamped hyperedges: 235,263
+* distribution of the connected components:
+<center>
+
+| Component Size  | Number |
+| ----- | ---- |
+| 986 | 1 |
+| 1 | 19 |
+</center>
+
+* degree and edge size distributions:
 <center>
 <img src="stats.png" alt="hypergraph statistics" style="width:75%">
 </center>
