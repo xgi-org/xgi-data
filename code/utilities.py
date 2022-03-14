@@ -79,53 +79,14 @@ def write_hypergraph_json(H, path):
     data["hypergraph"].update(H._hypergraph)
 
     # get node data
-    data["nodes"] = {id: H._node_attr[id] for id in H.nodes}
+    data["node-data"] = {id: H._node_attr[id] for id in H.nodes}
+    # get edge data
+    data["edge-data"] = {id: H._edge_attr[id] for id in H.edges}
 
     # hyperedge list
-    data["hyperedges"] = {
-        id: {"members": tuple(H.edges.members(id)), **H.edges[id]} for id in H.edges
-    }
+    data["edge-dict"] = {id: H.edges.members(id) for id in H.edges}
 
     datastring = json.dumps(data)
 
     with open(path, "w") as output_file:
         output_file.write(datastring)
-
-
-# def read_hypergraph_json(path):
-#     """
-#     A function to read a file in a standardized JSON format.
-
-#     Parameters
-#     ----------
-#     path: string
-#         The path of the file to read from
-
-#     Returns
-#     -------
-#     A Hypergraph object
-#         The loaded hypergraph
-
-#     Raises
-#     ------
-#     XGIError
-#         If the json is not in a format that can be loaded.
-
-#     Examples
-#     --------
-#         >>> import xgi
-#         >>> H = xgi.read_hypergraph_json("test.json")
-#     """
-#     with open(path) as file:
-#         data = json.loads(file.read())
-#     H = xgi.empty_hypergraph()
-#     try:
-#         H._hypergraph = data["hypergraph"]
-#         H._node_attr = data["node-data"]
-#         H._edge_attr = data["hyperedge-data"]
-#         H._edge = {id: set(val) for id, val in data["hyperedges"].items()}
-#         H._node = get_dual(H._edge)
-#     except:
-#         raise XGIError("Invalid data structure!")
-
-#     return H
