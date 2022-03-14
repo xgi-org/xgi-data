@@ -3,7 +3,7 @@
 This is a repository of openly available hypergraph datasets in JSON format with documentation more extensively describing the datasets. There is also a rudimentary inspection script for checking that datasets are in the proper format. This is loosely inspired by [Datasheets for Datasets](https://arxiv.org/abs/1803.09010) by Gebru et al.
 
 Overview of the JSON data structure for all datasets:
-* "hypergraph": This tag accesses the attributes of the entire hypergraph dataset such as the authors or dataset name.
+* "hypergraph-data": This tag accesses the attributes of the entire hypergraph dataset such as the authors or dataset name.
 * "node-data": This tag accesses the nodes of the hypergraph and their associated properties as a dictionary where the keys are node IDs and the corresponding values are dictionaries. If a node doesn't have any properties, the associated dictionary is empty.
   * "name": This tag accesses the node's name if there is one that is different from the ID specified in the hyperedges.
   * Other tags are user-specified based on the particular attributes provided by the dataset.

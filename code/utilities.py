@@ -75,8 +75,8 @@ def write_hypergraph_json(H, path):
     data = dict()
 
     # get overall hypergraph attributes, name always gets written (default is an empty string)
-    data["hypergraph"] = {}
-    data["hypergraph"].update(H._hypergraph)
+    data["hypergraph-data"] = {}
+    data["hypergraph-data"].update(H._hypergraph)
 
     # get node data
     data["node-data"] = {id: H._node_attr[id] for id in H.nodes}

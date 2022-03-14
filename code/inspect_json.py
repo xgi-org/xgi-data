@@ -13,7 +13,7 @@ with open(filename) as file:
 
     # load hypergraph attributes
     try:
-        hypergraph_attrs = data["hypergraph"]
+        hypergraph_attrs = data["hypergraph-data"]
 
         # Is a dataset name specified?
         try:
