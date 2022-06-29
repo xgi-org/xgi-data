@@ -17,6 +17,7 @@ All IDs are strings but can be converted to other types if desired.
 
 These datasets have been taken from the following sources:
 * [Data! by Austin Benson](https://www.cs.cornell.edu/~arb/data/)
+* [SocioPatterns](http://www.sociopatterns.org/)
 
 ## Repository Description
 The `code` folder contains the scripts used to convert hypergraph datasets into a more standard format and the JSON inspection script. The `data` folder contains the datasets, with each folder containing a README describing the dataset and the dataset in JSON format.
