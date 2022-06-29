@@ -3,7 +3,6 @@ import sys
 
 from sympy import hyper
 
-
 # graph parameters
 filename = sys.argv[1]
 
@@ -35,7 +34,7 @@ with open(filename) as file:
 
     except:
         print("No hyperedges specified!")
-    
+
     try:
         edges = data["edge-dict"]
         for e in edges:

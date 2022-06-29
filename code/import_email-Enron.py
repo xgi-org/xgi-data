@@ -1,8 +1,9 @@
-import matplotlib.pyplot as plt
-import utilities
 import os
-import xgi
+
+import matplotlib.pyplot as plt
 import numpy as np
+import utilities
+import xgi
 
 output_stats = True
 output_file = True

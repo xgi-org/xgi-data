@@ -1,10 +1,11 @@
-import imp
-from xgi.exception import XGIError
-import xgi
-import json
-from xgi.utils.utilities import get_dual
 import csv
+import imp
+import json
 from datetime import datetime, timedelta
+
+import xgi
+from xgi.exception import XGIError
+from xgi.utils.utilities import get_dual
 
 
 def readScHoLPData(edge_size_file, member_ID_file):
