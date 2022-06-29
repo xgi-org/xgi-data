@@ -1,22 +1,22 @@
 {
-    "congress-bills":
-    {
-      "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/congress-bills/congress-bills.json"
-    },
-    "email-enron":
-    {
-      "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/email-enron/email-Enron.json"
-    },
-    "email-eu":
-    {
-      "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/email-eu/email-Eu.json"
-    },
-    "hospital-lyon":
-    {
-      "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/hospital-lyon/hospital-Lyon.json"
-    },
-    "tags-ask-ubuntu":
-    {
-      "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/tags-ask-ubuntu/tags-ask-ubuntu.json"
-    }
+  "congress-bills":
+  {
+    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/congress-bills/congress-bills.json"
+  },
+  "email-enron":
+  {
+    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/email-enron/email-enron.json"
+  },
+  "email-eu":
+  {
+    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/email-eu/email-eu.json"
+  },
+  "hospital-lyon":
+  {
+    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/hospital-lyon/hospital-lyon.json"
+  },
+  "tags-ask-ubuntu":
+  {
+    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/tags-ask-ubuntu/tags-ask-ubuntu.json"
   }
+}
