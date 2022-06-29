@@ -1,4 +1,4 @@
-# hospital-Lyon
+# hospital-lyon
 
 ## Summary
 This dataset contains the temporal network of contacts between patients, patients and health-care workers (HCWs) and among HCWs in a hospital ward in Lyon, France, from Monday, December 6, 2010 at 1:00 pm to Friday, December 10, 2010 at 2:00 pm. The study included 46 HCWs and 29 patients.

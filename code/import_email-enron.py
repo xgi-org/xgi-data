@@ -1,34 +1,40 @@
-import matplotlib.pyplot as plt
-import utilities
 import os
-import xgi
-from datetime import datetime
+
+import matplotlib.pyplot as plt
 import numpy as np
+import utilities
+import xgi
 
 output_stats = True
 output_file = True
 
 data_folder = "data"
 
-dataset_folder = "email-Eu"
-size_file = "email-Eu-full-nverts.txt"
-member_file = "email-Eu-full-simplices.txt"
-times_file = "email-Eu-full-times.txt"
+dataset_folder = "email-Enron"
+size_file = "email-Enron-full-nverts.txt"
+member_file = "email-Enron-full-simplices.txt"
+labels_file = "email-Enron-full-node-labels.txt"
+times_file = "email-Enron-full-times.txt"
 
 hyperedge_size_file = os.path.join(data_folder, dataset_folder, size_file)
 member_ID_file = os.path.join(data_folder, dataset_folder, member_file)
+node_labels_file = os.path.join(data_folder, dataset_folder, labels_file)
 edge_times_file = os.path.join(data_folder, dataset_folder, times_file)
 
 edgelist = utilities.readScHoLPData(hyperedge_size_file, member_ID_file)
 
 H = xgi.Hypergraph(edgelist)
-H["name"] = "email-Eu"
+H["name"] = "email-Enron"
 
-delimiter = "\t"
+delimiter = " "
 
-edge_times = utilities.read_SCHOLP_dates(
-    edge_times_file, reference_time=datetime(1970, 1, 1), time_unit="seconds"
-)
+node_labels = utilities.readScHoLPNodeLabels(node_labels_file, delimiter)
+edge_times = utilities.read_SCHOLP_dates(edge_times_file, time_unit="milliseconds")
+
+H.add_nodes_from(list(node_labels.keys()))
+
+for label, name in node_labels.items():
+    H.nodes[label].update({"name": name})
 
 for label, date in edge_times.items():
     H.edges[label].update({"timestamp": date})
@@ -53,11 +59,11 @@ if output_stats:
     plt.xlabel(r"$m$", fontsize=16)
     plt.ylabel(r"$P(m)$", fontsize=16)
     plt.tight_layout()
-    plt.savefig("data/email-Eu/stats.png", dpi=300)
+    plt.savefig("data/email-Enron/stats.png", dpi=300)
     plt.show()
 
 
 if output_file:
     utilities.write_hypergraph_json(
-        H, os.path.join(data_folder, dataset_folder, "email-Eu.json")
+        H, os.path.join(data_folder, dataset_folder, "email-Enron.json")
     )

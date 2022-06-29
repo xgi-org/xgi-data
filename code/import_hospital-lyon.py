@@ -1,14 +1,19 @@
-import xgi
-import pandas as pd
 from datetime import datetime, timedelta
+
 import matplotlib.pyplot as plt
 import numpy as np
-
+import pandas as pd
+import xgi
 
 output_stats = True
 output_file = True
 
-data = pd.read_csv("data/hospital-lyon/detailed_list_of_contacts_Hospital.dat", sep="\t", header=0, names=["time", "node1", "node2", "type1", "type2"])
+data = pd.read_csv(
+    "data/hospital-lyon/detailed_list_of_contacts_Hospital.dat",
+    sep="\t",
+    header=0,
+    names=["time", "node1", "node2", "type1", "type2"],
+)
 
 edges = dict()
 node_dict = dict()
