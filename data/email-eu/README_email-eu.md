@@ -1,4 +1,4 @@
-# email-Eu
+# email-eu
 
 ## Overview
 This hypergraph dataset was generated using email data from a large European research institution for a period from October 2003 to May 2005 (18 months). Information about all incoming and outgoing email between members of the research institution has been anonymized. The e-mails only represent communication between institution members (the core), and the dataset does not contain incoming messages from or outgoing messages to the rest of the world.

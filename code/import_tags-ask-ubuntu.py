@@ -48,13 +48,13 @@ if output_stats:
     plt.figure(figsize=(8, 4))
     plt.subplot(121)
 
-    degrees, counts = np.unique([H.degree(n) for n in H.nodes], return_counts=True)
+    degrees, counts = np.unique(H.nodes.degree.asnumpy(), return_counts=True)
     plt.loglog(degrees, counts / H.num_nodes, "ko", markersize=2)
     plt.title("Degree distribution")
     plt.xlabel(r"$k$", fontsize=16)
     plt.ylabel(r"$P(k)$", fontsize=16)
     plt.subplot(122)
-    sizes, counts = np.unique([H.edge_size(e) for e in H.edges], return_counts=True)
+    sizes, counts = np.unique(H.edges.size.asnumpy(), return_counts=True)
     plt.plot(sizes, counts / H.num_edges, "ko", markersize=2)
     plt.title("Edge size distribution")
     plt.xlabel(r"$m$", fontsize=16)
@@ -65,6 +65,4 @@ if output_stats:
 
 
 if output_file:
-    utilities.write_hypergraph_json(
-        H, os.path.join(data_folder, dataset_folder, "tags-ask-ubuntu.json")
-    )
+    xgi.write_json(H, os.path.join(data_folder, dataset_folder, "tags-ask-ubuntu.json"))

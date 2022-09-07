@@ -55,7 +55,7 @@ for t, edgelist in edges.items():
 
 
 if output_file:
-    xgi.write_hypergraph_json(H, "data/hospital-lyon/hospital-Lyon.json")
+    xgi.write_json(H, "data/hospital-lyon/hospital-Lyon.json")
 
 if output_stats:
     print((H.num_nodes, H.num_edges))

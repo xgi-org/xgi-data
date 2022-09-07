@@ -1,11 +1,5 @@
-import csv
-import imp
 import json
 from datetime import datetime, timedelta
-
-import xgi
-from xgi.exception import XGIError
-from xgi.utils.utilities import get_dual
 
 
 def readScHoLPData(edge_size_file, member_ID_file):
@@ -50,44 +44,3 @@ def read_SCHOLP_dates(
                 time = reference_time + timedelta(seconds=int(lines[i]) / 1000)
             time_dict[i] = time.isoformat()
     return time_dict
-
-
-def write_hypergraph_json(H, path):
-    """
-    A function to write a file in a standardized JSON format.
-
-    Parameters
-    ----------
-    H: Hypergraph object
-        The specified hypergraph object
-    path: string
-        The path of the file to read from
-
-    Examples
-    --------
-        >>> import xgi
-        >>> n = 1000
-        >>> m = n
-        >>> p = 0.01
-        >>> H = xgi.erdos_renyi_hypergraph(n, m, p)
-        >>> xgi.write_hypergraph_json(H, "test.json")
-    """
-    # initialize empty data
-    data = dict()
-
-    # get overall hypergraph attributes, name always gets written (default is an empty string)
-    data["hypergraph-data"] = {}
-    data["hypergraph-data"].update(H._hypergraph)
-
-    # get node data
-    data["node-data"] = {id: H._node_attr[id] for id in H.nodes}
-    # get edge data
-    data["edge-data"] = {id: H._edge_attr[id] for id in H.edges}
-
-    # hyperedge list
-    data["edge-dict"] = {id: H.edges.members(id) for id in H.edges}
-
-    datastring = json.dumps(data)
-
-    with open(path, "w") as output_file:
-        output_file.write(datastring)
