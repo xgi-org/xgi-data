@@ -1,8 +1,6 @@
 import json
 import sys
 
-from sympy import hyper
-
 # graph parameters
 filename = sys.argv[1]
 
