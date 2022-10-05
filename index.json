@@ -7,6 +7,10 @@
   {
     "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/contact-high-school/contact-high-school.json"
   },
+  "contact-primary-school":
+  {
+    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/contact-primary-school/contact-primary-school.json"
+  },
   "email-enron":
   {
     "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/email-enron/email-enron.json"
