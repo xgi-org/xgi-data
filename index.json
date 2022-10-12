@@ -23,8 +23,13 @@
   {
     "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/hospital-lyon/hospital-lyon.json"
   },
+  "NDC-substances":
+  {
+    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/NDC-substances.json"
+  },
   "tags-ask-ubuntu":
   {
     "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/tags-ask-ubuntu/tags-ask-ubuntu.json"
   }
 }
+
