@@ -26,5 +26,9 @@
   "tags-ask-ubuntu":
   {
     "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/tags-ask-ubuntu/tags-ask-ubuntu.json"
+  },
+    "tags-math-sx":
+  {
+    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/tags-ask-ubuntu/tags-math-sx.json"
   }
 }
