@@ -10,6 +10,14 @@
   {
     "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/contact-primary-school/contact-primary-school.json"
   },
+  "diseasome":
+  {
+    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/diseasome/diseasome.json"
+  },
+  "disgenenet":
+  {
+    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/disgenenet/disgenenet.json"
+  },
   "email-enron":
   {
     "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/email-enron/email-enron.json"
@@ -30,7 +38,7 @@
   {
     "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/tags-ask-ubuntu/tags-ask-ubuntu.json"
   },
-    "tags-math-sx":
+  "tags-math-sx":
   {
     "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/tags-math-sx/tags-math-sx.json"
   }
