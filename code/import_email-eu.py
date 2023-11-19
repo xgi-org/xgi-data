@@ -37,7 +37,10 @@ for label, date in edge_times.items():
 if output_stats:
     print((H.num_nodes, H.num_edges))
 
-    print([len(c) for c in xgi.connected_components(H)])
+    vals, counts = np.unique(
+        [len(c) for c in xgi.connected_components(H)], return_counts=True
+    )
+    print(np.array([vals, counts]))
 
     plt.figure(figsize=(8, 4))
     plt.subplot(121)

@@ -1,46 +1,66 @@
-{  "congress-bills":
+{ "coauth-mag-geology":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/congress-bills/congress-bills.json"
+  "url":"https://gitlab.com/complexgroupinteractions/xgi-data-coauth-mag-geology/-/raw/main/coauth-MAG-Geology.json?inline=false"
+  },
+  "coauth-mag-history":
+  {
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-coauth-mag-history/-/raw/main/coauth-MAG-History.json?inline=false"
+  },
+  "congress-bills":
+  {
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-congress-bills/-/raw/main/congress-bills.json?inline=false"
   },
   "contact-high-school":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/contact-high-school/contact-high-school.json"
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-contact-high-school/-/raw/main/contact-high-school.json?inline=false"
   },
   "contact-primary-school":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/contact-primary-school/contact-primary-school.json"
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-contact-primary-school/-/raw/main/contact-primary-school.json?inline=false"
+  },
+  "dawn":
+  {
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-dawn/-/raw/main/dawn.json?inline=false"
   },
   "diseasome":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/diseasome/diseasome.json"
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-diseasome/-/raw/main/diseasome.json?inline=false"
   },
   "disgenenet":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/disgenenet/disgenenet.json"
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-disgenenet/-/raw/main/disgenenet.json?inline=false"
   },
   "email-enron":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/email-enron/email-enron.json"
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-email-enron/-/raw/main/email-enron.json?inline=false"
   },
   "email-eu":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/email-eu/email-eu.json"
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-email-eu/-/raw/main/email-eu.json?inline=false"
   },
   "hospital-lyon":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/hospital-lyon/hospital-lyon.json"
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-hospital-lyon/-/raw/main/hospital-lyon.json?inline=false"
   },
-  "NDC-substances":
+  "ndc-classes":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/NDC-substances.json"
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-NDC-classes/-/raw/main/ndc-classes.json?inline=false"
+  },
+  "ndc-substances":
+  {
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-NDC-substances/-/raw/main/NDC-substances.json?inline=false"
   },
   "tags-ask-ubuntu":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/tags-ask-ubuntu/tags-ask-ubuntu.json"
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-tags-ask-ubuntu/-/raw/main/tags-ask-ubuntu.json?inline=false"
   },
   "tags-math-sx":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/tags-math-sx/tags-math-sx.json"
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-tags-math-sx/-/raw/main/tags-math-sx.json?inline=false"
+  },
+  "tags-stack-overflow":
+  {
+    "url":"https://gitlab.com/complexgroupinteractions/xgi-data-tags-stack-overflow/-/raw/main/tags-stack-overflow.json?inline=false"
   }
 }
 

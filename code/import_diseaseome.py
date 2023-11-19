@@ -1,8 +1,9 @@
-import xgi
-import xml.etree.ElementTree as ET
 import os
+import xml.etree.ElementTree as ET
+
 import matplotlib.pyplot as plt
 import numpy as np
+import xgi
 
 output_stats = True
 output_file = True
@@ -23,23 +24,32 @@ for item in root:
             for node in subelement:
                 for attrlist in node:
                     for attr in attrlist:
-                        if attr.attrib["id"] == "0" and attr.attrib["value"] == "disease":
-                            node_attr[node.attrib["id"]] = {"label":node.attrib["label"]}
-                        elif attr.attrib["id"] == "0" and attr.attrib["value"] == "gene":
-                            edge_attr[node.attrib["id"]] = {"label":node.attrib["label"]}
+                        if (
+                            attr.attrib["id"] == "0"
+                            and attr.attrib["value"] == "disease"
+                        ):
+                            node_attr[node.attrib["id"]] = {
+                                "label": node.attrib["label"]
+                            }
+                        elif (
+                            attr.attrib["id"] == "0" and attr.attrib["value"] == "gene"
+                        ):
+                            edge_attr[node.attrib["id"]] = {
+                                "label": node.attrib["label"]
+                            }
 
 for item in root:
     for subelement in item:
         if "edges" in subelement.tag:
-                for edge in subelement:
-                    source = edge.attrib["source"]
-                    target = edge.attrib["target"]
-                    if source in node_attr and target in edge_attr:
-                        H.add_node_to_edge(edge.attrib["target"], edge.attrib["source"])
-                    elif target in node_attr and source in edge_attr:
-                        H.add_node_to_edge(edge.attrib["source"], edge.attrib["target"])
-                    else:
-                        print(f"Edge ({source}, {target}) Not bipartite!")
+            for edge in subelement:
+                source = edge.attrib["source"]
+                target = edge.attrib["target"]
+                if source in node_attr and target in edge_attr:
+                    H.add_node_to_edge(edge.attrib["target"], edge.attrib["source"])
+                elif target in node_attr and source in edge_attr:
+                    H.add_node_to_edge(edge.attrib["source"], edge.attrib["target"])
+                else:
+                    print(f"Edge ({source}, {target}) Not bipartite!")
 
 xgi.set_edge_attributes(H, edge_attr)
 xgi.set_node_attributes(H, node_attr)
@@ -49,7 +59,10 @@ H["name"] = "Diseasome"
 if output_stats:
     print((H.num_nodes, H.num_edges))
 
-    print([len(c) for c in xgi.connected_components(H)])
+    vals, counts = np.unique(
+        [len(c) for c in xgi.connected_components(H)], return_counts=True
+    )
+    print(np.array([vals, counts]))
 
     plt.figure(figsize=(8, 4))
     plt.subplot(121)

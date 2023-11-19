@@ -28,7 +28,7 @@ H["name"] = "congress-bills"
 
 delimiter = "\t"
 
-node_labels = utilities.readScHoLPNodeLabels(node_labels_file, delimiter)
+node_labels = utilities.readScHoLPLabels(node_labels_file, delimiter)
 edge_times = utilities.read_SCHOLP_dates(edge_times_file)
 
 H.add_nodes_from(list(node_labels.keys()))
@@ -42,8 +42,11 @@ for label, date in edge_times.items():
 if output_stats:
     print((H.num_nodes, H.num_edges))
 
-    print([len(c) for c in xgi.connected_components(H)])
-
+    vals, counts = np.unique(
+        [len(c) for c in xgi.connected_components(H)], return_counts=True
+    )
+    print(np.array([vals, counts]))
+    
     plt.figure(figsize=(8, 4))
     plt.subplot(121)
 

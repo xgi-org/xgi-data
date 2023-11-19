@@ -19,28 +19,41 @@ def readScHoLPData(edge_size_file, member_ID_file):
     return edgelist
 
 
-def readScHoLPNodeLabels(node_labels_file, delimiter):
+def readScHoLPLabels(labels_file, delimiter="\t", two_column=True):
     label_dict = dict()
-    with open(node_labels_file) as label_data:
-        for line in label_data:
-            s = line.split(delimiter, 1)
-            label_dict[s[0]] = s[1].rstrip("\n")
+    with open(labels_file) as label_data:
+        for i, line in enumerate(label_data):
+            if two_column:
+                s = line.split(delimiter, 1)
+                idx = s[0]
+                val = s[1].rstrip("\n")
+            else:
+                idx = i
+                val = line.rstrip("\n")
+            label_dict[idx] = val
     return label_dict
 
 
 def read_SCHOLP_dates(
     timestamp_file, reference_time=datetime(1, 1, 1), time_unit="days"
 ):
-
     time_dict = dict()
     with open(timestamp_file) as time_data:
         lines = time_data.read().splitlines()
         for i in range(len(lines)):
+            t = int(lines[i])
             if time_unit == "days":
-                time = reference_time + timedelta(days=int(lines[i]))
+                time = reference_time + timedelta(days=t)
             elif time_unit == "seconds":
-                time = reference_time + timedelta(seconds=int(lines[i]))
+                time = reference_time + timedelta(seconds=t)
             elif time_unit == "milliseconds":
-                time = reference_time + timedelta(seconds=int(lines[i]) / 1000)
+                time = reference_time + timedelta(seconds=t / 1000)
+            elif time_unit == "quarters":
+                year = int((t - 1) / 4)
+                quarter = (t - 1) % 4 + 1
+                time = datetime(year, int(3 * quarter), 1)
+            elif time_unit == "years":
+                year = t
+                time = datetime(year, 1, 1)
             time_dict[i] = time.isoformat()
     return time_dict
