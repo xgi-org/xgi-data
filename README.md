@@ -31,6 +31,7 @@ Currently available data sets are:
 * [email-enron](https://zenodo.org/records/10155819)
 * [email-eu](https://zenodo.org/records/10155823)
 * [hospital-lyon](https://zenodo.org/records/10155825)
+* [kaggle-whats-cooking](https://zenodo.org/records/10157609)
 * [ndc-classes](https://zenodo.org/records/10155772)
 * [ndc-substances](https://zenodo.org/records/10155831)
 * [tags-ask-ubuntu](https://zenodo.org/records/10155835)
