@@ -46,7 +46,7 @@ if output_stats:
         [len(c) for c in xgi.connected_components(H)], return_counts=True
     )
     print(np.array([vals, counts]))
-    
+
     plt.figure(figsize=(8, 4))
     plt.subplot(121)
 
