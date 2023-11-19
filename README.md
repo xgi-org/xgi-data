@@ -19,20 +19,23 @@ All IDs are strings but can be converted to other types if desired.
 ## Data sets available on xgi-data
 
 Currently available data sets are:
-* [coauth-mag-geology](https://gitlab.com/complexgroupinteractions/xgi-data-coauth-mag-geology)
-* [coauth-mag-history](https://gitlab.com/complexgroupinteractions/xgi-data-coauth-mag-history)
-* [congress-bills](https://gitlab.com/complexgroupinteractions/xgi-data-congress-bills)
-* [contact-high-school](https://gitlab.com/complexgroupinteractions/xgi-data-contact-high-school)
-* [contact-primary-school](https://gitlab.com/complexgroupinteractions/xgi-data-contact-primary-school)
-* [diseasome](https://gitlab.com/complexgroupinteractions/xgi-data-diseasome)
-* [disgenenet](https://gitlab.com/complexgroupinteractions/xgi-data-disgenenet)
-* [email-enron](https://gitlab.com/complexgroupinteractions/xgi-data-email-enron)
-* [email-eu](https://gitlab.com/complexgroupinteractions/xgi-data-email-eu)
-* [hospital-lyon](https://gitlab.com/complexgroupinteractions/xgi-data-hospital-lyon)
-* [ndc-substances](https://gitlab.com/complexgroupinteractions/xgi-data-ndc-substances)
-* [tags-ask-ubuntu](https://gitlab.com/complexgroupinteractions/xgi-data-tags-ask-ubuntu)
-* [tags-math-sx](https://gitlab.com/complexgroupinteractions/xgi-data-tags-math-sx)
-* [tags-stack-exchange](https://gitlab.com/complexgroupinteractions/xgi-data-tags-stack-overflow)
+* [coauth-dblp](https://zenodo.org/records/10155873)
+* [coauth-mag-geology](https://zenodo.org/records/10155787)
+* [coauth-mag-history](https://zenodo.org/records/10155796)
+* [congress-bills](https://zenodo.org/records/10155800)
+* [contact-high-school](https://zenodo.org/records/10155802)
+* [contact-primary-school](https://zenodo.org/records/10155810)
+* [dawn](https://zenodo.org/records/10155779)
+* [diseasome](https://zenodo.org/records/10155812)
+* [disgenenet](https://zenodo.org/records/10155817)
+* [email-enron](https://zenodo.org/records/10155819)
+* [email-eu](https://zenodo.org/records/10155823)
+* [hospital-lyon](https://zenodo.org/records/10155825)
+* [ndc-classes](https://zenodo.org/records/10155772)
+* [ndc-substances](https://zenodo.org/records/10155831)
+* [tags-ask-ubuntu](https://zenodo.org/records/10155835)
+* [tags-math-sx](https://zenodo.org/records/10155845)
+* [tags-stack-overflow](https://zenodo.org/records/10155885)
 
 These datasets can be loaded with `xgi` using the following lines:
 ```python
