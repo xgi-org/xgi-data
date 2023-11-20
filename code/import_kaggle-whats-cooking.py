@@ -70,4 +70,6 @@ if output_stats:
 
 
 if output_file:
-    xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))
+    xgi.write_json(
+        H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json")
+    )
