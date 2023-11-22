@@ -7,40 +7,46 @@ import pandas as pd
 import xgi
 
 output_stats = True
-output_file = True
+output_file = False
 
-data = pd.read_csv(
-    "data/hospital-lyon/detailed_list_of_contacts_Hospital.dat",
-    sep="\t",
-    header=0,
-    names=["time", "node1", "node2", "type1", "type2"],
-)
+preexisting = True
 
-H = xgi.Hypergraph()
-H["name"] = "hospital-lyon"
+data_folder = "data"
+datasheet_folder = "datasheets"
 
-nodes1 = dict(zip(data["node1"].values.tolist(), data["type1"].values.tolist()))
-nodes2 = dict(zip(data["node2"].values.tolist(), data["type2"].values.tolist()))
-nodes = dict()
-nodes.update(nodes1)
-nodes.update(nodes2)
+if preexisting:
+    H = xgi.load_xgi_data("hospital-lyon")
+    dataset_name = H["name"]
+else:
+    dataset_name = "hospital-lyon"
+    data = pd.read_csv(
+        "data/hospital-lyon/detailed_list_of_contacts_Hospital.dat",
+        sep="\t",
+        header=0,
+        names=["time", "node1", "node2", "type1", "type2"],
+    )
 
-for node, nodetype in nodes.items():
-    H.add_node(node, type=nodetype)
+    H = xgi.Hypergraph()
+    H["name"] = "hospital-lyon"
 
-start_time = datetime(2010, 12, 6, 13, 0, 0)
+    nodes1 = dict(zip(data["node1"].values.tolist(), data["type1"].values.tolist()))
+    nodes2 = dict(zip(data["node2"].values.tolist(), data["type2"].values.tolist()))
+    nodes = dict()
+    nodes.update(nodes1)
+    nodes.update(nodes2)
 
-for t in data["time"].unique():
-    time = timedelta(seconds=int(t))
-    d = data[data.time == t]
-    links = d[["node1", "node2"]].values.tolist()
-    G = nx.Graph(links)
-    for e in nx.find_cliques(G):
-        H.add_edge(e, timestamp=(start_time + time).isoformat())
+    for node, nodetype in nodes.items():
+        H.add_node(node, type=nodetype)
 
+    start_time = datetime(2010, 12, 6, 13, 0, 0)
 
-if output_file:
-    xgi.write_json(H, "data/hospital-lyon/hospital-lyon.json")
+    for t in data["time"].unique():
+        time = timedelta(seconds=int(t))
+        d = data[data.time == t]
+        links = d[["node1", "node2"]].values.tolist()
+        G = nx.Graph(links)
+        for e in nx.find_cliques(G):
+            H.add_edge(e, timestamp=(start_time + time).isoformat())
 
 if output_stats:
     print((H.num_nodes, H.num_edges))
@@ -67,3 +73,7 @@ if output_stats:
     plt.tight_layout()
     plt.savefig("data/hospital-lyon/stats.png", dpi=300)
     plt.show()
+
+
+if output_file:
+    xgi.write_json(H, "data/hospital-lyon/hospital-lyon.json")

@@ -12,13 +12,13 @@ output_file = False
 
 preexisting = True
 
+data_folder = "data"
 datasheet_folder = "datasheets"
 
 if preexisting:
-    H = xgi.load_xgi_data("coauth-dblp")
+    H = xgi.load_xgi_data("dawn")
+    dataset_name = H["name"]
 else:
-    data_folder = "data"
-
     dataset_name = "DAWN"
 
     dataset_folder = "DAWN"
@@ -63,22 +63,22 @@ if output_stats:
     plt.figure(figsize=(8, 4))
     plt.subplot(121)
 
-    h = H.nodes.degree.ashist(density=True, log_binning=True)
+    h = H.nodes.degree.ashist(bins=100, density=True, log_binning=True)
 
     plt.loglog(h["bin_center"], h["value"], "ko", markersize=2)
     plt.title("Degree distribution")
     plt.xlabel(r"$k$", fontsize=16)
     plt.ylabel(r"$P(k)$", fontsize=16)
-    plt.ylim([1e-5, 1])
+    plt.ylim([5e-9, 1])
     sns.despine()
 
     plt.subplot(122)
     h = H.edges.size.ashist(density=True, log_binning=True)
-    plt.loglog(h["bin_center"], h["value"], "ko", markersize=2)
+    plt.semilogy(h["bin_center"], h["value"], "ko", markersize=2)
     plt.title("Edge size distribution")
     plt.xlabel(r"$s$", fontsize=16)
     plt.ylabel(r"$P(s)$", fontsize=16)
-    plt.ylim([1e-5, 1])
+    plt.ylim([5e-9, 1])
     sns.despine()
     plt.tight_layout()
     plt.savefig(f"{datasheet_folder}/{dataset_name}/stats.png", dpi=300)
