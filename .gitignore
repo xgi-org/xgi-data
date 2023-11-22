@@ -139,3 +139,4 @@ test.*
 *.gexf
 *.tsv
 data
+*.json
