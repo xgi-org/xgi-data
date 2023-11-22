@@ -140,3 +140,4 @@ test.*
 *.tsv
 data
 *.json
+*.json.gz
