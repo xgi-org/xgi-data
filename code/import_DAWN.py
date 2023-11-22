@@ -8,43 +8,49 @@ import utilities
 import xgi
 
 output_stats = True
-output_file = True
+output_file = False
 
-data_folder = "data"
+preexisting = True
+
 datasheet_folder = "datasheets"
 
-dataset_name = "DAWN"
+if preexisting:
+    H = xgi.load_xgi_data("coauth-dblp")
+else:
+    data_folder = "data"
 
-dataset_folder = "DAWN"
-size_file = "DAWN-nverts.txt"
-member_file = "DAWN-simplices.txt"
-labels_file = "DAWN-node-labels.txt"
-times_file = "DAWN-times.txt"
+    dataset_name = "DAWN"
 
-hyperedge_size_file = os.path.join(data_folder, dataset_folder, size_file)
-member_ID_file = os.path.join(data_folder, dataset_folder, member_file)
-node_labels_file = os.path.join(data_folder, dataset_folder, labels_file)
-edge_times_file = os.path.join(data_folder, dataset_folder, times_file)
+    dataset_folder = "DAWN"
+    size_file = "DAWN-nverts.txt"
+    member_file = "DAWN-simplices.txt"
+    labels_file = "DAWN-node-labels.txt"
+    times_file = "DAWN-times.txt"
 
-edgelist = utilities.readScHoLPData(hyperedge_size_file, member_ID_file)
+    hyperedge_size_file = os.path.join(data_folder, dataset_folder, size_file)
+    member_ID_file = os.path.join(data_folder, dataset_folder, member_file)
+    node_labels_file = os.path.join(data_folder, dataset_folder, labels_file)
+    edge_times_file = os.path.join(data_folder, dataset_folder, times_file)
 
-H = xgi.Hypergraph(edgelist)
-H["name"] = dataset_name
+    edgelist = utilities.readScHoLPData(hyperedge_size_file, member_ID_file)
 
-delimiter = " "
+    H = xgi.Hypergraph(edgelist)
+    H["name"] = dataset_name
 
-node_labels = utilities.readScHoLPLabels(node_labels_file, delimiter)
-edge_times = utilities.read_SCHOLP_dates(
-    edge_times_file, reference_time=datetime(1, 1, 1), time_unit="quarters"
-)
+    delimiter = " "
 
-H.add_nodes_from(list(node_labels.keys()))
+    node_labels = utilities.readScHoLPLabels(node_labels_file, delimiter)
+    edge_times = utilities.read_SCHOLP_dates(
+        edge_times_file, reference_time=datetime(1, 1, 1), time_unit="quarters"
+    )
 
-for label, name in node_labels.items():
-    H.nodes[label].update({"name": name})
+    H.add_nodes_from(list(node_labels.keys()))
 
-for label, date in edge_times.items():
-    H.edges[label].update({"timestamp": date})
+    for label, name in node_labels.items():
+        H.nodes[label].update({"name": name})
+
+    for label, date in edge_times.items():
+        H.edges[label].update({"timestamp": date})
 
 if output_stats:
     print((H.num_nodes, H.num_edges))
