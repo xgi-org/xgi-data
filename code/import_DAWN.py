@@ -3,6 +3,7 @@ from datetime import datetime
 
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 import utilities
 import xgi
 
@@ -10,6 +11,9 @@ output_stats = True
 output_file = True
 
 data_folder = "data"
+datasheet_folder = "datasheets"
+
+dataset_name = "DAWN"
 
 dataset_folder = "DAWN"
 size_file = "DAWN-nverts.txt"
@@ -25,7 +29,7 @@ edge_times_file = os.path.join(data_folder, dataset_folder, times_file)
 edgelist = utilities.readScHoLPData(hyperedge_size_file, member_ID_file)
 
 H = xgi.Hypergraph(edgelist)
-H["name"] = "DAWN"
+H["name"] = dataset_name
 
 delimiter = " "
 
@@ -53,21 +57,27 @@ if output_stats:
     plt.figure(figsize=(8, 4))
     plt.subplot(121)
 
-    degrees, counts = np.unique(H.nodes.degree.asnumpy(), return_counts=True)
-    plt.loglog(degrees, counts / H.num_nodes, "ko", markersize=2)
+    h = H.nodes.degree.ashist(density=True, log_binning=True)
+
+    plt.loglog(h["bin_center"], h["value"], "ko", markersize=2)
     plt.title("Degree distribution")
     plt.xlabel(r"$k$", fontsize=16)
     plt.ylabel(r"$P(k)$", fontsize=16)
+    plt.ylim([1e-5, 1])
+    sns.despine()
+
     plt.subplot(122)
-    sizes, counts = np.unique(H.edges.size.asnumpy(), return_counts=True)
-    plt.loglog(sizes, counts / H.num_edges, "ko", markersize=2)
+    h = H.edges.size.ashist(density=True, log_binning=True)
+    plt.loglog(h["bin_center"], h["value"], "ko", markersize=2)
     plt.title("Edge size distribution")
-    plt.xlabel(r"$m$", fontsize=16)
-    plt.ylabel(r"$P(m)$", fontsize=16)
+    plt.xlabel(r"$s$", fontsize=16)
+    plt.ylabel(r"$P(s)$", fontsize=16)
+    plt.ylim([1e-5, 1])
+    sns.despine()
     plt.tight_layout()
-    plt.savefig(f"{data_folder}/{dataset_folder}/stats.png", dpi=300)
+    plt.savefig(f"{datasheet_folder}/{dataset_name}/stats.png", dpi=300)
     plt.show()
 
 
 if output_file:
-    xgi.write_json(H, os.path.join(data_folder, dataset_folder, "dawn.json"))
+    xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{dataset_name}.json"))
