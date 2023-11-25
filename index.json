@@ -47,9 +47,25 @@
   {
     "url":"https://zenodo.org/records/10155825/files/hospital-lyon.json"
   },
+  "hypertext-conference":
+  {
+    "url":"https://zenodo.org/records/10206136/files/hypertext-conference.json"
+  },
+  "invs13":
+  {
+    "url":"https://zenodo.org/records/10206151/files/InVS13.json"
+  },
+  "invs15":
+  {
+    "url":"https://zenodo.org/records/10206154/files/InVS15.json"
+  },
   "kaggle-whats-cooking":
   {
     "url":"https://zenodo.org/records/10157609/files/kaggle-whats-cooking.json"
+  },
+  "malawi-village":
+  {
+    "url":"https://zenodo.org/records/10206147/files/malawi-village.json"
   },
   "ndc-classes":
   {
@@ -58,6 +74,10 @@
   "ndc-substances":
   {
     "url":"https://zenodo.org/records/10155831/files/NDC-substances.json"
+  },
+  "science-gallery":
+  {
+    "url":"https://zenodo.org/records/10206142/files/science-gallery.json"
   },
   "sfhh-conference":
   {
