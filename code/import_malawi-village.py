@@ -17,7 +17,7 @@ H["name"] = dataset_name
 nodes1 = data["id1"].values.tolist()
 nodes2 = data["id2"].values.tolist()
 nodes = set()
-nodes.update(set(nodes))
+nodes.update(set(nodes1))
 nodes.update(set(nodes2))
 
 H.add_nodes_from(nodes)
