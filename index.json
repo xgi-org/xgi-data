@@ -1,46 +1,99 @@
-{  "congress-bills":
+{ 
+  "coauth-dblp":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/congress-bills/congress-bills.json"
+  "url":"https://zenodo.org/records/10155873/files/coauth-DBLP.json"
+  },
+  "coauth-mag-geology":
+  {
+  "url":"https://zenodo.org/records/10155787/files/coauth-MAG-Geology.json"
+  },
+  "coauth-mag-history":
+  {
+    "url":"https://zenodo.org/records/10155796/files/coauth-MAG-History.json"
+  },
+  "congress-bills":
+  {
+    "url":"https://zenodo.org/records/10155800/files/congress-bills.json"
   },
   "contact-high-school":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/contact-high-school/contact-high-school.json"
+    "url":"https://zenodo.org/records/10155802/files/contact-high-school.json"
   },
   "contact-primary-school":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/contact-primary-school/contact-primary-school.json"
+    "url":"https://zenodo.org/records/10155810/files/contact-primary-school.json"
+  },
+  "dawn":
+  {
+    "url":"https://zenodo.org/records/10155779/files/dawn.json"
   },
   "diseasome":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/diseasome/diseasome.json"
+    "url":"https://zenodo.org/records/10155812/files/diseasome.json"
   },
   "disgenenet":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/disgenenet/disgenenet.json"
+    "url":"https://zenodo.org/records/10155817/files/disgenenet.json"
   },
   "email-enron":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/email-enron/email-enron.json"
+    "url":"https://zenodo.org/records/10155819/files/email-enron.json"
   },
   "email-eu":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/email-eu/email-eu.json"
+    "url":"https://zenodo.org/records/10155823/files/email-eu.json"
   },
   "hospital-lyon":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/hospital-lyon/hospital-lyon.json"
+    "url":"https://zenodo.org/records/10155825/files/hospital-lyon.json"
   },
-  "NDC-substances":
+  "hypertext-conference":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/NDC-substances.json"
+    "url":"https://zenodo.org/records/10206136/files/hypertext-conference.json"
+  },
+  "invs13":
+  {
+    "url":"https://zenodo.org/records/10206151/files/InVS13.json"
+  },
+  "invs15":
+  {
+    "url":"https://zenodo.org/records/10206154/files/InVS15.json"
+  },
+  "kaggle-whats-cooking":
+  {
+    "url":"https://zenodo.org/records/10157609/files/kaggle-whats-cooking.json"
+  },
+  "malawi-village":
+  {
+    "url":"https://zenodo.org/records/10206147/files/malawi-village.json"
+  },
+  "ndc-classes":
+  {
+    "url":"https://zenodo.org/records/10155772/files/ndc-classes.json"
+  },
+  "ndc-substances":
+  {
+    "url":"https://zenodo.org/records/10155831/files/NDC-substances.json"
+  },
+  "science-gallery":
+  {
+    "url":"https://zenodo.org/records/10206142/files/science-gallery.json"
+  },
+  "sfhh-conference":
+  {
+    "url":"https://zenodo.org/records/10198859/files/sfhh-conference.json"
   },
   "tags-ask-ubuntu":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/tags-ask-ubuntu/tags-ask-ubuntu.json"
+    "url":"https://zenodo.org/records/10155835/files/tags-ask-ubuntu.json"
   },
   "tags-math-sx":
   {
-    "url":"https://raw.githubusercontent.com/ComplexGroupInteractions/xgi-data/main/data/tags-math-sx/tags-math-sx.json"
+    "url":"https://zenodo.org/records/10155845/files/tags-math-sx.json"
+  },
+  "tags-stack-overflow":
+  {
+    "url":"https://zenodo.org/records/10155885/files/tags-stack-overflow.json"
   }
 }
 

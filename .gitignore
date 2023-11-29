@@ -138,3 +138,6 @@ dmypy.json
 test.*
 *.gexf
 *.tsv
+data
+*.json
+*.json.gz
