@@ -31,15 +31,15 @@ H["name"] = dataset_name
 delimiter = " "
 
 node_labels = utilities.readScHoLPNodeLabels(node_labels_file, delimiter)
-edge_times = utilities.read_SCHOLP_dates(edge_times_file, time_unit="milliseconds")
+times = np.loadtxt(edge_times_file) #utilities.read_SCHOLP_dates(edge_times_file, time_unit="milliseconds")
 
 H.add_nodes_from(list(node_labels.keys()))
 
 for label, name in node_labels.items():
     H.nodes[label].update({"name": name})
 
-for label, date in edge_times.items():
-    H.edges[label].update({"timestamp": date})
+for label, date in enumerate(times):
+    H.edges[label].update({"timestamp": int(date)})
 
 if output_stats:
     print((H.num_nodes, H.num_edges))
@@ -56,13 +56,13 @@ if output_stats:
     plt.ylabel(r"$P(k)$", fontsize=16)
     plt.subplot(122)
     sizes, counts = np.unique(H.edges.size.asnumpy(), return_counts=True)
-    plt.plot(sizes, counts / H.num_edges, "ko", markersize=2)
+    plt.loglog(sizes, counts / H.num_edges, "ko", markersize=2)
     plt.title("Edge size distribution")
-    plt.xlabel(r"$m$", fontsize=16)
-    plt.ylabel(r"$P(m)$", fontsize=16)
+    plt.xlabel(r"$s$", fontsize=16)
+    plt.ylabel(r"$P(s)$", fontsize=16)
     plt.tight_layout()
     plt.savefig(f"{data_folder}/{dataset_folder}/stats.png", dpi=300)
-    plt.show()
+    #plt.show()
 
 
 if output_file:
