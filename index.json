@@ -1,99 +1,363 @@
 { 
   "coauth-dblp":
   {
-  "url":"https://zenodo.org/records/10155873/files/coauth-DBLP.json"
+  "url":"https://zenodo.org/records/10155873/files/coauth-DBLP.json",
+  "num-nodes": "1,930,378",
+  "num-edges": "3,700,681",
+  "num-unique-edges": "2,599,087",
+  "min-edge-size": "1",
+  "max-edge-size": "280",
+  "mean-edge-size": "2.79",
+  "min-degree": "1",
+  "max-degree": "1,425",
+  "mean-degree": "5.35",
+  "num-components": "154,294",
+  "gc-size": "1,659,954"
   },
   "coauth-mag-geology":
   {
-  "url":"https://zenodo.org/records/10155787/files/coauth-MAG-Geology.json"
+  "url":"https://zenodo.org/records/10155787/files/coauth-MAG-Geology.json",
+  "num-nodes": "1,261,129",
+  "num-edges": "1,590,335",
+  "num-unique-edges": "1,203,895",
+  "min-edge-size": "1",
+  "max-edge-size": "25",
+  "mean-edge-size": "2.78",
+  "min-degree": "0",
+  "max-degree": "1,148",
+  "mean-degree": "3.5",
+  "num-components": "235,397",
+  "gc-size": "898,648"
   },
   "coauth-mag-history":
   {
-    "url":"https://zenodo.org/records/10155796/files/coauth-MAG-History.json"
+    "url":"https://zenodo.org/records/10155796/files/coauth-MAG-History.json",
+    "num-nodes": "1,034,876",
+    "num-edges": "1,812,511",
+    "num-unique-edges": "895,439",
+    "min-edge-size": "1",
+    "max-edge-size": "25",
+    "mean-edge-size": "1.31",
+    "min-degree": "0",
+    "max-degree": "4,348",
+    "mean-degree": "2.29",
+    "num-components": "639,143",
+    "gc-size": "219,435"
   },
   "congress-bills":
   {
-    "url":"https://zenodo.org/records/10155800/files/congress-bills.json"
+    "url":"https://zenodo.org/records/10155800/files/congress-bills.json",
+    "num-nodes": "1,718",
+    "num-edges": "282,049",
+    "num-unique-edges": "105,733",
+    "min-edge-size": "1",
+    "max-edge-size": "25",
+    "mean-edge-size": "1.31",
+    "min-degree": "3",
+    "max-degree": "9,375",
+    "mean-degree": "1,421.3",
+    "num-components": "1",
+    "gc-size": "1,718"
   },
   "contact-high-school":
   {
-    "url":"https://zenodo.org/records/10155802/files/contact-high-school.json"
+    "url":"https://zenodo.org/records/10155802/files/contact-high-school.json",
+    "num-nodes": "327",
+    "num-edges": "172,035",
+    "num-unique-edges": "7,818",
+    "min-edge-size": "2",
+    "max-edge-size": "5",
+    "mean-edge-size": "2.05",
+    "min-degree": "7",
+    "max-degree": "4,495",
+    "mean-degree": "1,078.65",
+    "num-components": "1",
+    "gc-size": "327"
   },
   "contact-primary-school":
   {
-    "url":"https://zenodo.org/records/10155810/files/contact-primary-school.json"
+    "url":"https://zenodo.org/records/10155810/files/contact-primary-school.json",
+    "num-nodes": "242",
+    "num-edges": "106,879",
+    "num-unique-edges": "12,704",
+    "min-edge-size": "2",
+    "max-edge-size": "5",
+    "mean-edge-size": "2.1",
+    "min-degree": "125",
+    "max-degree": "2,234",
+    "mean-degree": "925.61",
+    "num-components": "1",
+    "gc-size": "242"
   },
   "dawn":
   {
-    "url":"https://zenodo.org/records/10155779/files/dawn.json"
+    "url":"https://zenodo.org/records/10155779/files/dawn.json",
+    "num-nodes": "2,558",
+    "num-edges": "2,272,433",
+    "num-unique-edges": "141,087",
+    "min-edge-size": "1",
+    "max-edge-size": "16",
+    "mean-edge-size": "1.58",
+    "min-degree": "1",
+    "max-degree": "479,242",
+    "mean-degree": "1406.1",
+    "num-components": "269",
+    "gc-size": "2,290"
   },
   "diseasome":
   {
-    "url":"https://zenodo.org/records/10155812/files/diseasome.json"
+    "url":"https://zenodo.org/records/10155812/files/diseasome.json",
+    "num-nodes": "516",
+    "num-edges": "903",
+    "num-unique-edges": "481",
+    "min-edge-size": "1",
+    "max-edge-size": "11",
+    "mean-edge-size": "1.72",
+    "min-degree": "1",
+    "max-degree": "41",
+    "mean-degree": "3.0",
+    "num-components": "1",
+    "gc-size": "516"
   },
   "disgenenet":
   {
-    "url":"https://zenodo.org/records/10155817/files/disgenenet.json"
+    "url":"https://zenodo.org/records/10155817/files/disgenenet.json",
+    "num-nodes": "12,368",
+    "num-edges": "2,261",
+    "num-unique-edges": "2,069",
+    "min-edge-size": "1",
+    "max-edge-size": "2,453",
+    "mean-edge-size": "50.23",
+    "min-degree": "1",
+    "max-degree": "382",
+    "mean-degree": "9.18",
+    "num-components": "1",
+    "gc-size": "12,368"
   },
   "email-enron":
   {
-    "url":"https://zenodo.org/records/10155819/files/email-enron.json"
+    "url":"https://zenodo.org/records/10155819/files/email-enron.json",
+    "num-nodes": "148",
+    "num-edges": "10,885",
+    "num-unique-edges": "1,514",
+    "min-edge-size": "1",
+    "max-edge-size": "37",
+    "mean-edge-size": "2.47",
+    "min-degree": "0",
+    "max-degree": "1,327",
+    "mean-degree": "181.85",
+    "num-components": "6",
+    "gc-size": "143"
   },
   "email-eu":
   {
-    "url":"https://zenodo.org/records/10155823/files/email-eu.json"
+    "url":"https://zenodo.org/records/10155823/files/email-eu.json",
+    "num-nodes": "1,005",
+    "num-edges": "235,263",
+    "num-unique-edges": "25,148",
+    "min-edge-size": "1",
+    "max-edge-size": "40",
+    "mean-edge-size": "2.39",
+    "min-degree": "1",
+    "max-degree": "8,664",
+    "mean-degree": "559.8",
+    "num-components": "20",
+    "gc-size": "986"
   },
   "hospital-lyon":
   {
-    "url":"https://zenodo.org/records/10155825/files/hospital-lyon.json"
+    "url":"https://zenodo.org/records/10155825/files/hospital-lyon.json",
+    "num-nodes": "75",
+    "num-edges": "27,834",
+    "num-unique-edges": "1,824",
+    "min-edge-size": "2",
+    "max-edge-size": "5",
+    "mean-edge-size": "2.09",
+    "min-degree": "10",
+    "max-degree": "3,603",
+    "mean-degree": "774.68",
+    "num-components": "1",
+    "gc-size": "75"
   },
   "hypertext-conference":
   {
-    "url":"https://zenodo.org/records/10206136/files/hypertext-conference.json"
+    "url":"https://zenodo.org/records/10206136/files/hypertext-conference.json",
+    "num-nodes": "113",
+    "num-edges": "19,036",
+    "num-unique-edges": "2,434",
+    "min-edge-size": "2",
+    "max-edge-size": "6",
+    "mean-edge-size": "2.05",
+    "min-degree": "2",
+    "max-degree": "1,446",
+    "mean-degree": "345.56",
+    "num-components": "1",
+    "gc-size": "113"
   },
   "invs13":
   {
-    "url":"https://zenodo.org/records/10206151/files/InVS13.json"
+    "url":"https://zenodo.org/records/10206151/files/InVS13.json",
+    "num-nodes": "92",
+    "num-edges": "9,644",
+    "num-unique-edges": "787",
+    "min-edge-size": "2",
+    "max-edge-size": "4",
+    "mean-edge-size": "2.01",
+    "min-degree": "5",
+    "max-degree": "1,089",
+    "mean-degree": "210.65",
+    "num-components": "1",
+    "gc-size": "92"
   },
   "invs15":
   {
-    "url":"https://zenodo.org/records/10206154/files/InVS15.json"
+    "url":"https://zenodo.org/records/10206154/files/InVS15.json",
+    "num-nodes": "232",
+    "num-edges": "73,822",
+    "num-unique-edges": "4,909",
+    "min-edge-size": "2",
+    "max-edge-size": "4",
+    "mean-edge-size": "2.03",
+    "min-degree": "0",
+    "max-degree": "3,192",
+    "mean-degree": "646.33",
+    "num-components": "16",
+    "gc-size": "217"
   },
   "kaggle-whats-cooking":
   {
-    "url":"https://zenodo.org/records/10157609/files/kaggle-whats-cooking.json"
+    "url":"https://zenodo.org/records/10157609/files/kaggle-whats-cooking.json",
+    "num-nodes": "6,714",
+    "num-edges": "39,774",
+    "num-unique-edges": "39,243",
+    "min-edge-size": "1",
+    "max-edge-size": "65",
+    "mean-edge-size": "10.77",
+    "min-degree": "1",
+    "max-degree": "18,048",
+    "mean-degree": "63.78",
+    "num-components": "1",
+    "gc-size": "6,714"
   },
   "malawi-village":
   {
-    "url":"https://zenodo.org/records/10206147/files/malawi-village.json"
+    "url":"https://zenodo.org/records/10206147/files/malawi-village.json",
+    "num-nodes": "86",
+    "num-edges": "99,942",
+    "num-unique-edges": "432",
+    "min-edge-size": "2",
+    "max-edge-size": "4",
+    "mean-edge-size": "2.01",
+    "min-degree": "12",
+    "max-degree": "7,636",
+    "mean-degree": "2,338.01",
+    "num-components": "2",
+    "gc-size": "84"
   },
   "ndc-classes":
   {
-    "url":"https://zenodo.org/records/10155772/files/ndc-classes.json"
+    "url":"https://zenodo.org/records/10155772/files/ndc-classes.json",
+    "num-nodes": "1,161",
+    "num-edges": "49,726",
+    "num-unique-edges": "1,090",
+    "min-edge-size": "1",
+    "max-edge-size": "39",
+    "mean-edge-size": "3.14",
+    "min-degree": "1",
+    "max-degree": "5,358",
+    "mean-degree": "134.58",
+    "num-components": "183",
+    "gc-size": "628"
   },
   "ndc-substances":
   {
-    "url":"https://zenodo.org/records/10155831/files/NDC-substances.json"
+    "url":"https://zenodo.org/records/10155831/files/NDC-substances.json",
+    "num-nodes": "5,556",
+    "num-edges": "112,405",
+    "num-unique-edges": "9,906",
+    "min-edge-size": "1",
+    "max-edge-size": "25",
+    "mean-edge-size": "1.85",
+    "min-degree": "0",
+    "max-degree": "6,693",
+    "mean-degree": "37.41",
+    "num-components": "2,221",
+    "gc-size": "3,065"
   },
   "science-gallery":
   {
-    "url":"https://zenodo.org/records/10206142/files/science-gallery.json"
+    "url":"https://zenodo.org/records/10206142/files/science-gallery.json",
+    "num-nodes": "10,972",
+    "num-edges": "338,765",
+    "num-unique-edges": "52,706",
+    "min-edge-size": "2",
+    "max-edge-size": "5",
+    "mean-edge-size": "2.12",
+    "min-degree": "1",
+    "max-degree": "486",
+    "mean-degree": "65.41",
+    "num-components": "304",
+    "gc-size": "410"
   },
   "sfhh-conference":
   {
-    "url":"https://zenodo.org/records/10198859/files/sfhh-conference.json"
+    "url":"https://zenodo.org/records/10198859/files/sfhh-conference.json",
+    "num-nodes": "403",
+    "num-edges": "54,305",
+    "num-unique-edges": "10,541",
+    "min-edge-size": "2",
+    "max-edge-size": "9",
+    "mean-edge-size": "2.15",
+    "min-degree": "2",
+    "max-degree": "1,960",
+    "mean-degree": "289.42",
+    "num-components": "1",
+    "gc-size": "403"
   },
   "tags-ask-ubuntu":
   {
-    "url":"https://zenodo.org/records/10155835/files/tags-ask-ubuntu.json"
+    "url":"https://zenodo.org/records/10155835/files/tags-ask-ubuntu.json",
+    "num-nodes": "3,029",
+    "num-edges": "271,233",
+    "num-unique-edges": "147,222",
+    "min-edge-size": "1",
+    "max-edge-size": "5",
+    "mean-edge-size": "2.71",
+    "min-degree": "1",
+    "max-degree": "21,004",
+    "mean-degree": "242.42",
+    "num-components": "9",
+    "gc-size": "3021"
   },
   "tags-math-sx":
   {
-    "url":"https://zenodo.org/records/10155845/files/tags-math-sx.json"
+    "url":"https://zenodo.org/records/10155845/files/tags-math-sx.json",
+    "num-nodes": "1,629",
+    "num-edges": "822,059",
+    "num-unique-edges": "170,476",
+    "min-edge-size": "1",
+    "max-edge-size": "5",
+    "mean-edge-size": "2.19",
+    "min-degree": "1",
+    "max-degree": "71,046",
+    "mean-degree": "1,105.98",
+    "num-components": "3",
+    "gc-size": "1,627"
   },
   "tags-stack-overflow":
   {
-    "url":"https://zenodo.org/records/10155885/files/tags-stack-overflow.json"
+    "url":"https://zenodo.org/records/10155885/files/tags-stack-overflow.json",
+    "num-nodes": "49,998",
+    "num-edges": "14,458,875",
+    "num-unique-edges": "5,537,637",
+    "min-edge-size": "1",
+    "max-edge-size": "5",
+    "mean-edge-size": "2.97",
+    "min-degree": "1",
+    "max-degree": "1,457,906",
+    "mean-degree": "858.45",
+    "num-components": "61",
+    "gc-size": "49,931"
   }
 }
 
