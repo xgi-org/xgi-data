@@ -8,6 +8,9 @@
   "min-edge-size": "1",
   "max-edge-size": "280",
   "mean-edge-size": "2.79",
+  "min-degree": "1",
+  "max-degree": "1,425",
+  "mean-degree": "5.35",
   "num-components": "154,294",
   "gc-size": "1,659,954"
   },
@@ -20,6 +23,9 @@
   "min-edge-size": "1",
   "max-edge-size": "25",
   "mean-edge-size": "2.78",
+  "min-degree": "0",
+  "max-degree": "1,148",
+  "mean-degree": "3.5",
   "num-components": "235,397",
   "gc-size": "898,648"
   },
@@ -32,6 +38,9 @@
     "min-edge-size": "1",
     "max-edge-size": "25",
     "mean-edge-size": "1.31",
+    "min-degree": "0",
+    "max-degree": "4,348",
+    "mean-degree": "2.29",
     "num-components": "639,143",
     "gc-size": "219,435"
   },
@@ -44,6 +53,9 @@
     "min-edge-size": "1",
     "max-edge-size": "25",
     "mean-edge-size": "1.31",
+    "min-degree": "3",
+    "max-degree": "9,375",
+    "mean-degree": "1,421.3",
     "num-components": "1",
     "gc-size": "1,718"
   },
@@ -56,6 +68,9 @@
     "min-edge-size": "2",
     "max-edge-size": "5",
     "mean-edge-size": "2.05",
+    "min-degree": "7",
+    "max-degree": "4,495",
+    "mean-degree": "1,078.65",
     "num-components": "1",
     "gc-size": "327"
   },
@@ -68,6 +83,9 @@
     "min-edge-size": "2",
     "max-edge-size": "5",
     "mean-edge-size": "2.1",
+    "min-degree": "125",
+    "max-degree": "2,234",
+    "mean-degree": "925.61",
     "num-components": "1",
     "gc-size": "242"
   },
@@ -80,6 +98,9 @@
     "min-edge-size": "1",
     "max-edge-size": "16",
     "mean-edge-size": "1.58",
+    "min-degree": "1",
+    "max-degree": "479,242",
+    "mean-degree": "1406.1",
     "num-components": "269",
     "gc-size": "2,290"
   },
@@ -92,6 +113,9 @@
     "min-edge-size": "1",
     "max-edge-size": "11",
     "mean-edge-size": "1.72",
+    "min-degree": "1",
+    "max-degree": "41",
+    "mean-degree": "3.0",
     "num-components": "1",
     "gc-size": "516"
   },
@@ -104,6 +128,9 @@
     "min-edge-size": "1",
     "max-edge-size": "2,453",
     "mean-edge-size": "50.23",
+    "min-degree": "1",
+    "max-degree": "382",
+    "mean-degree": "9.18",
     "num-components": "1",
     "gc-size": "12,368"
   },
@@ -116,6 +143,9 @@
     "min-edge-size": "1",
     "max-edge-size": "37",
     "mean-edge-size": "2.47",
+    "min-degree": "0",
+    "max-degree": "1,327",
+    "mean-degree": "181.85",
     "num-components": "6",
     "gc-size": "143"
   },
@@ -128,6 +158,9 @@
     "min-edge-size": "1",
     "max-edge-size": "40",
     "mean-edge-size": "2.39",
+    "min-degree": "1",
+    "max-degree": "8,664",
+    "mean-degree": "559.8",
     "num-components": "20",
     "gc-size": "986"
   },
@@ -140,6 +173,9 @@
     "min-edge-size": "2",
     "max-edge-size": "5",
     "mean-edge-size": "2.09",
+    "min-degree": "10",
+    "max-degree": "3,603",
+    "mean-degree": "774.68",
     "num-components": "1",
     "gc-size": "75"
   },
@@ -152,6 +188,9 @@
     "min-edge-size": "2",
     "max-edge-size": "6",
     "mean-edge-size": "2.05",
+    "min-degree": "2",
+    "max-degree": "1,446",
+    "mean-degree": "345.56",
     "num-components": "1",
     "gc-size": "113"
   },
@@ -164,6 +203,9 @@
     "min-edge-size": "2",
     "max-edge-size": "4",
     "mean-edge-size": "2.01",
+    "min-degree": "5",
+    "max-degree": "1,089",
+    "mean-degree": "210.65",
     "num-components": "1",
     "gc-size": "92"
   },
@@ -176,6 +218,9 @@
     "min-edge-size": "2",
     "max-edge-size": "4",
     "mean-edge-size": "2.03",
+    "min-degree": "0",
+    "max-degree": "3,192",
+    "mean-degree": "646.33",
     "num-components": "16",
     "gc-size": "217"
   },
@@ -188,6 +233,9 @@
     "min-edge-size": "1",
     "max-edge-size": "65",
     "mean-edge-size": "10.77",
+    "min-degree": "1",
+    "max-degree": "18,048",
+    "mean-degree": "63.78",
     "num-components": "1",
     "gc-size": "6,714"
   },
@@ -200,6 +248,9 @@
     "min-edge-size": "2",
     "max-edge-size": "4",
     "mean-edge-size": "2.01",
+    "min-degree": "12",
+    "max-degree": "7,636",
+    "mean-degree": "2,338.01",
     "num-components": "2",
     "gc-size": "84"
   },
@@ -212,6 +263,9 @@
     "min-edge-size": "1",
     "max-edge-size": "39",
     "mean-edge-size": "3.14",
+    "min-degree": "1",
+    "max-degree": "5,358",
+    "mean-degree": "134.58",
     "num-components": "183",
     "gc-size": "628"
   },
@@ -224,6 +278,9 @@
     "min-edge-size": "1",
     "max-edge-size": "25",
     "mean-edge-size": "1.85",
+    "min-degree": "0",
+    "max-degree": "6,693",
+    "mean-degree": "37.41",
     "num-components": "2,221",
     "gc-size": "3,065"
   },
@@ -236,6 +293,9 @@
     "min-edge-size": "2",
     "max-edge-size": "5",
     "mean-edge-size": "2.12",
+    "min-degree": "1",
+    "max-degree": "486",
+    "mean-degree": "65.41",
     "num-components": "304",
     "gc-size": "410"
   },
@@ -248,6 +308,9 @@
     "min-edge-size": "2",
     "max-edge-size": "9",
     "mean-edge-size": "2.15",
+    "min-degree": "2",
+    "max-degree": "1,960",
+    "mean-degree": "289.42",
     "num-components": "1",
     "gc-size": "403"
   },
@@ -260,6 +323,9 @@
     "min-edge-size": "1",
     "max-edge-size": "5",
     "mean-edge-size": "2.71",
+    "min-degree": "1",
+    "max-degree": "21,004",
+    "mean-degree": "242.42",
     "num-components": "9",
     "gc-size": "3021"
   },
@@ -272,6 +338,9 @@
     "min-edge-size": "1",
     "max-edge-size": "5",
     "mean-edge-size": "2.19",
+    "min-degree": "1",
+    "max-degree": "71,046",
+    "mean-degree": "1,105.98",
     "num-components": "3",
     "gc-size": "1,627"
   },
@@ -284,6 +353,9 @@
     "min-edge-size": "1",
     "max-edge-size": "5",
     "mean-edge-size": "2.97",
+    "min-degree": "1",
+    "max-degree": "1,457,906",
+    "mean-degree": "858.45",
     "num-components": "61",
     "gc-size": "49,931"
   }
