@@ -43,6 +43,9 @@ Currently available data sets are:
 * [tags-ask-ubuntu](https://zenodo.org/records/10155835)
 * [tags-math-sx](https://zenodo.org/records/10155845)
 * [tags-stack-overflow](https://zenodo.org/records/10155885)
+* [threads-ask-ubuntu](https://zenodo.org/records/10373311)
+* [threads-math-sx](https://zenodo.org/records/10373324)
+* [threads-stack-overflow](https://zenodo.org/records/10373328)
 
 These datasets can be loaded with `xgi` using the following lines:
 ```python
