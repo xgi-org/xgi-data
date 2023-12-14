@@ -1,7 +1,6 @@
 import os
 
 import numpy as np
-
 import utilities
 import xgi
 
@@ -29,7 +28,9 @@ H["name"] = dataset_name
 delimiter = " "
 
 node_labels = utilities.readScHoLPLabels(node_labels_file, delimiter)
-times = np.loadtxt(edge_times_file) #utilities.read_SCHOLP_dates(edge_times_file, time_unit="milliseconds")
+times = np.loadtxt(
+    edge_times_file
+)  # utilities.read_SCHOLP_dates(edge_times_file, time_unit="milliseconds")
 
 H.add_nodes_from(list(node_labels.keys()))
 
