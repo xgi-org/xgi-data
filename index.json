@@ -358,6 +358,51 @@
     "mean-degree": "858.45",
     "num-components": "61",
     "gc-size": "49,931"
+  },
+  "threads-ask-ubuntu":
+  {
+    "url":"https://zenodo.org/records/10373311/files/threads-ask-ubuntu.json",
+    "num-nodes": "125,602",
+    "num-edges": "192,947",
+    "num-unique-edges": "166,999",
+    "min-edge-size": "1",
+    "max-edge-size": "14",
+    "mean-edge-size": "1.8",
+    "min-degree": "1",
+    "max-degree": "2,332",
+    "mean-degree": "2.76",
+    "num-components": "39,187",
+    "gc-size": "82,075"
+  },
+  "threads-math-sx":
+  {
+    "url":"https://zenodo.org/records/10373324/files/threads-math-sx.json",
+    "num-nodes": "176,445",
+    "num-edges": "719,792",
+    "num-unique-edges": "595,749",
+    "min-edge-size": "1",
+    "max-edge-size": "21",
+    "mean-edge-size": "2.24",
+    "min-degree": "1",
+    "max-degree": "12,511",
+    "mean-degree": "9.13",
+    "num-components": "23,181",
+    "gc-size": "152,702"
+  },
+  "threads-stack-overflow":
+  {
+    "url":"https://zenodo.org/records/10373328/files/threads-stack-overflow.json",
+    "num-nodes": "2,675,969",
+    "num-edges": "11,305,356",
+    "num-unique-edges": "9,705,575",
+    "min-edge-size": "1",
+    "max-edge-size": "67",
+    "mean-edge-size": "2.26",
+    "min-degree": "1",
+    "max-degree": "36,365",
+    "mean-degree": "9.56",
+    "num-components": "364,286",
+    "gc-size": "2,301,086"
   }
 }
 

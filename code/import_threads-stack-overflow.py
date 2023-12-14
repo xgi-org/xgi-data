@@ -3,38 +3,34 @@ import os
 import utilities
 import xgi
 
+delimiter = " "
+
 data_folder = "data"
 
-dataset_name = "tags-stack-overflow"
+new_dataset_name = "threads-stack-overflow"
+
+dataset_name = "threads-stack-overflow-full"
 dataset_folder = f"{dataset_name}"
 size_file = f"{dataset_name}-nverts.txt"
 member_file = f"{dataset_name}-simplices.txt"
-n_labels_file = f"{dataset_name}-node-labels.txt"
 e_labels_file = f"{dataset_name}-simplex-labels.txt"
 times_file = f"{dataset_name}-times.txt"
 
 hyperedge_size_file = os.path.join(data_folder, dataset_folder, size_file)
 member_ID_file = os.path.join(data_folder, dataset_folder, member_file)
-node_labels_file = os.path.join(data_folder, dataset_folder, n_labels_file)
+edge_labels_file = os.path.join(data_folder, dataset_folder, e_labels_file)
 edge_times_file = os.path.join(data_folder, dataset_folder, times_file)
 
 edgelist = utilities.readScHoLPData(hyperedge_size_file, member_ID_file)
+edge_labels = utilities.readScHoLPLabels(edge_labels_file, delimiter, two_column=False)
 
-H = xgi.Hypergraph(edgelist)
-H["name"] = dataset_name
+H = xgi.Hypergraph(dict(zip(edge_labels, edgelist)))
+H["name"] = new_dataset_name
 
-delimiter = " "
-
-node_labels = utilities.readScHoLPLabels(node_labels_file, delimiter)
 edge_times = utilities.read_SCHOLP_dates(edge_times_file, time_unit="milliseconds")
-
-H.add_nodes_from(list(node_labels.keys()))
-
-for label, name in node_labels.items():
-    H.nodes[label].update({"name": name})
 
 for label, date in edge_times.items():
     H.edges[label].update({"timestamp": date})
 
 
-xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{dataset_name}.json"))
+xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))
