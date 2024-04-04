@@ -5,9 +5,11 @@ import xgi
 
 data_folder = "data"
 
-dataset_name = "coauth-MAG-History"
+dataset_name = "coauth-MAG-History-full"
 
-dataset_folder = "coauth-MAG-History"
+new_dataset_name = "coauth-MAG-History"
+
+dataset_folder = "coauth-MAG-History-full"
 size_file = f"{dataset_name}-nverts.txt"
 member_file = f"{dataset_name}-simplices.txt"
 n_labels_file = f"{dataset_name}-node-labels.txt"
@@ -22,7 +24,7 @@ edge_times_file = os.path.join(data_folder, dataset_folder, times_file)
 edgelist = utilities.readScHoLPData(hyperedge_size_file, member_ID_file)
 
 H = xgi.Hypergraph(edgelist)
-H["name"] = dataset_name
+H["name"] = new_dataset_name
 
 delimiter = " "
 
@@ -38,4 +40,4 @@ for label, date in edge_times.items():
     H.edges[label].update({"timestamp": date})
 
 
-xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{dataset_name}.json"))
+xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))
