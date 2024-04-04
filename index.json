@@ -16,7 +16,7 @@
   },
   "coauth-mag-geology":
   {
-  "url":"https://zenodo.org/records/10246624/files/coauth-MAG-Geology.json",
+  "url":"https://zenodo.org/records/10928443/files/coauth-MAG-Geology.json",
   "num-nodes": "1,261,129",
   "num-edges": "1,590,335",
   "num-unique-edges": "1,203,895",
@@ -31,7 +31,7 @@
   },
   "coauth-mag-history":
   {
-    "url":"https://zenodo.org/records/10155796/files/coauth-MAG-History.json",
+    "url":"https://zenodo.org/records/10928551/files/coauth-MAG-History.json",
     "num-nodes": "1,034,876",
     "num-edges": "1,812,511",
     "num-unique-edges": "895,439",
@@ -46,7 +46,7 @@
   },
   "congress-bills":
   {
-    "url":"https://zenodo.org/records/10155800/files/congress-bills.json",
+    "url":"https://zenodo.org/records/10928561/files/congress-bills.json",
     "num-nodes": "1,718",
     "num-edges": "282,049",
     "num-unique-edges": "105,733",
