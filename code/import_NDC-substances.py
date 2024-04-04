@@ -5,11 +5,14 @@ import xgi
 
 data_folder = "data"
 
-dataset_folder = "NDC-substances"
-size_file = "NDC-substances-nverts.txt"
-member_file = "NDC-substances-simplices.txt"
-labels_file = "NDC-substances-node-labels.txt"
-times_file = "NDC-substances-times.txt"
+dataset_name = "NDC-substances-full"
+new_dataset_name = "NDC-substances"
+
+dataset_folder = "NDC-substances-full"
+size_file = f"{dataset_name}-nverts.txt"
+member_file = f"{dataset_name}-simplices.txt"
+labels_file = f"{dataset_name}-node-labels.txt"
+times_file = f"{dataset_name}-times.txt"
 
 hyperedge_size_file = os.path.join(data_folder, dataset_folder, size_file)
 member_ID_file = os.path.join(data_folder, dataset_folder, member_file)
@@ -19,7 +22,7 @@ edge_times_file = os.path.join(data_folder, dataset_folder, times_file)
 edgelist = utilities.readScHoLPData(hyperedge_size_file, member_ID_file)
 
 H = xgi.Hypergraph(edgelist)
-H["name"] = "NDC-substances"
+H["name"] = new_dataset_name
 
 delimiter = " "
 
@@ -31,4 +34,4 @@ for label, name in node_labels.items():
     H.nodes[label].update({"name": name})
 
 
-xgi.write_json(H, os.path.join(data_folder, dataset_folder, "NDC-substances.json"))
+xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))
