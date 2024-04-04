@@ -6,9 +6,11 @@ import xgi
 
 data_folder = "data"
 
-dataset_name = "coauth-MAG-Geology"
+dataset_name = "coauth-MAG-Geology-full"
 
-dataset_folder = "coauth-MAG-Geology"
+new_dataset_name = "coauth-MAG-Geology"
+
+dataset_folder = "coauth-MAG-Geology-full"
 size_file = f"{dataset_name}-nverts.txt"
 member_file = f"{dataset_name}-simplices.txt"
 n_labels_file = f"{dataset_name}-node-labels.txt"
@@ -23,14 +25,12 @@ edge_times_file = os.path.join(data_folder, dataset_folder, times_file)
 edgelist = utilities.readScHoLPData(hyperedge_size_file, member_ID_file)
 
 H = xgi.Hypergraph(edgelist)
-H["name"] = dataset_name
+H["name"] = new_dataset_name
 
 delimiter = " "
 
 node_labels = utilities.readScHoLPLabels(node_labels_file, delimiter)
-times = np.loadtxt(
-    edge_times_file
-)  # utilities.read_SCHOLP_dates(edge_times_file, time_unit="milliseconds")
+times = np.loadtxt(edge_times_file)
 
 H.add_nodes_from(list(node_labels.keys()))
 
@@ -41,4 +41,4 @@ for label, date in enumerate(times):
     H.edges[label].update({"timestamp": int(date)})
 
 
-xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{dataset_name}.json"))
+xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))

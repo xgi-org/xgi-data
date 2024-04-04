@@ -5,13 +5,15 @@ import xgi
 
 data_folder = "data"
 
-dataset_name = "congress-bills"
+dataset_name = "congress-bills-full"
 
-dataset_folder = "congress-bills"
-size_file = "congress-bills-full-nverts.txt"
-member_file = "congress-bills-full-simplices.txt"
-labels_file = "congress-bills-full-node-labels.txt"
-times_file = "congress-bills-full-times.txt"
+new_dataset_name = "congress-bills"
+
+dataset_folder = "congress-bills-full"
+size_file = f"{dataset_name}-nverts.txt"
+member_file = f"{dataset_name}-simplices.txt"
+labels_file = f"{dataset_name}-node-labels.txt"
+times_file = f"{dataset_name}-times.txt"
 
 hyperedge_size_file = os.path.join(data_folder, dataset_folder, size_file)
 member_ID_file = os.path.join(data_folder, dataset_folder, member_file)
@@ -21,7 +23,7 @@ edge_times_file = os.path.join(data_folder, dataset_folder, times_file)
 edgelist = utilities.readScHoLPData(hyperedge_size_file, member_ID_file)
 
 H = xgi.Hypergraph(edgelist)
-H["name"] = "congress-bills"
+H["name"] = new_dataset_name
 
 delimiter = "\t"
 
@@ -37,4 +39,4 @@ for label, date in edge_times.items():
     H.edges[label].update({"timestamp": date})
 
 
-xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{dataset_name}.json"))
+xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))
