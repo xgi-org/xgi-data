@@ -28,7 +28,7 @@ def readScHoLPLabels(labels_file, delimiter="\t", two_column=True):
                 idx = s[0]
                 val = s[1].rstrip("\n")
             else:
-                idx = i
+                idx = i + 1
                 val = line.rstrip("\n")
             label_dict[idx] = val
     return label_dict
