@@ -20,7 +20,7 @@
     "num-unique-edges": 1204704,
     "min-edge-size": 1,
     "max-edge-size": 284,
-    "mean-edge-size": 2.80,
+    "mean-edge-size": 2.8,
     "min-degree": 1,
     "max-degree": 1153,
     "mean-degree": 3.53,
@@ -51,7 +51,7 @@
     "mean-edge-size": 8.66,
     "min-degree": 3,
     "max-degree": 9375,
-    "mean-degree": 1421.30,
+    "mean-degree": 1421.3,
     "num-components": 1,
     "gc-size": 1718
   },
@@ -167,6 +167,34 @@
     "num-components": 1,
     "gc-size": 75
   },
+  "house-bills": {
+    "url": "https://zenodo.org/records/10957691/files/house-bills.json",
+    "num-nodes": 1494,
+    "num-edges": 60987,
+    "num-unique-edges": 54933,
+    "min-edge-size": 2,
+    "max-edge-size": 399,
+    "mean-edge-size": 20.47,
+    "min-degree": 1,
+    "max-degree": 6220,
+    "mean-degree": 835.79,
+    "num-components": 1,
+    "gc-size": 1494
+  },
+  "house-committees": {
+    "url": "https://zenodo.org/records/10957702/files/house-committees.json",
+    "num-nodes": 1290,
+    "num-edges": 341,
+    "num-unique-edges": 336,
+    "min-edge-size": 1,
+    "max-edge-size": 81,
+    "mean-edge-size": 34.73,
+    "min-degree": 1,
+    "max-degree": 44,
+    "mean-degree": 9.18,
+    "num-components": 1,
+    "gc-size": 1290
+  },
   "hypertext-conference": {
     "url": "https://zenodo.org/records/10206136/files/hypertext-conference.json",
     "num-nodes": 113,
@@ -278,6 +306,34 @@
     "mean-degree": 65.41,
     "num-components": 304,
     "gc-size": 410
+  },
+  "senate-bills": {
+    "url": "https://zenodo.org/records/10957697/files/senate-bills.json",
+    "num-nodes": 294,
+    "num-edges": 29157,
+    "num-unique-edges": 21721,
+    "min-edge-size": 2,
+    "max-edge-size": 99,
+    "mean-edge-size": 7.96,
+    "min-degree": 1,
+    "max-degree": 3514,
+    "mean-degree": 789.62,
+    "num-components": 1,
+    "gc-size": 294
+  },
+  "senate-committees": {
+    "url": "https://zenodo.org/records/10957699/files/senate-committees.json",
+    "num-nodes": 282,
+    "num-edges": 315,
+    "num-unique-edges": 301,
+    "min-edge-size": 4,
+    "max-edge-size": 31,
+    "mean-edge-size": 17.17,
+    "min-degree": 1,
+    "max-degree": 63,
+    "mean-degree": 19.18,
+    "num-components": 1,
+    "gc-size": 282
   },
   "sfhh-conference": {
     "url": "https://zenodo.org/records/10198859/files/sfhh-conference.json",
