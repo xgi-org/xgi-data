@@ -167,6 +167,12 @@
     "num-components": 1,
     "gc-size": 75
   },
+  "house-bills": {
+    "url": "https://zenodo.org/records/10957691/files/house-bills.json"
+  },
+  "house-committees": {
+    "url": "https://zenodo.org/records/10957702/files/house-committees.json"
+  },
   "hypertext-conference": {
     "url": "https://zenodo.org/records/10206136/files/hypertext-conference.json",
     "num-nodes": 113,
@@ -278,6 +284,12 @@
     "mean-degree": 65.41,
     "num-components": 304,
     "gc-size": 410
+  },
+  "senate-bills": {
+    "url": "https://zenodo.org/records/10957697/files/senate-bills.json"
+  },
+  "senate-committees": {
+    "url": "https://zenodo.org/records/10957699/files/senate-committees.json"
   },
   "sfhh-conference": {
     "url": "https://zenodo.org/records/10198859/files/sfhh-conference.json",
