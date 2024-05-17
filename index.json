@@ -195,6 +195,9 @@
     "num-components": 1,
     "gc-size": 1290
   },
+  "hyperbard": {
+    "url": "https://zenodo.org/records/11211879/files/hyperbard_collection_information.json"
+  },
   "hypertext-conference": {
     "url": "https://zenodo.org/records/10206136/files/hypertext-conference.json",
     "num-nodes": 113,
