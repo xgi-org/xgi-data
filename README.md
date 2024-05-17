@@ -34,6 +34,7 @@ Currently available data sets are:
 * [house-bills](https://zenodo.org/records/10957691)
 * [house-committees](https://zenodo.org/records/10957702)
 * [hypertext-conference](https://zenodo.org/records/10206136)
+* [hyperbard](https://zenodo.org/records/11211879)
 * [invs13](https://zenodo.org/records/10206151)
 * [invs15](https://zenodo.org/records/10206154)
 * [kaggle-whats-cooking](https://zenodo.org/records/10157609)
