@@ -2,6 +2,7 @@ import os
 from datetime import datetime
 
 import utilities
+
 import xgi
 
 data_folder = "data"
