@@ -2,6 +2,7 @@ import os
 
 import numpy as np
 import utilities
+
 import xgi
 
 data_folder = "data"

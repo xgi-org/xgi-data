@@ -1,6 +1,7 @@
 import os
 
 import utilities
+
 import xgi
 
 delimiter = " "

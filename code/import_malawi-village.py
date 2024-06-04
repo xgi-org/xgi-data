@@ -2,6 +2,7 @@ from datetime import datetime, timedelta
 
 import networkx as nx
 import pandas as pd
+
 import xgi
 
 dataset_name = "Malawi-village"
