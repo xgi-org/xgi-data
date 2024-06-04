@@ -25,7 +25,7 @@ Once the dataset has been added to Zenodo, do the following:
 ### Updating Github
 1. Fork XGI-DATA.
 2. Move the import script created prior to the `code` folder.
-3. Add an entry (in alphabetical order) in `index.json` with:
+3. Add an entry (in alphabetical order) in [`index.json`](https://github.com/xgi-org/xgi-data/blob/add-contribution-guide/index.json) with:
    1. The dataset name as the key (all lowercase!)
    2. The value as a dictionary `{"url": <url>}`
    3. The url can be found by going to the [XGI page](https://zenodo.org/communities/xgi) on Zenodo, and clicking on the record you just made. Then the url is `https://zenodo.org/records/<number>/<dataset name>.json`.
