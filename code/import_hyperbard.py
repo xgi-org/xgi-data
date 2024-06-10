@@ -1,6 +1,6 @@
-import xgi
-import pandas as pd
 import matplotlib.pyplot as plt
+import pandas as pd
+import xgi
 
 data_folder = "data"
 collection_name = "hyperbard"
