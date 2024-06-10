@@ -30,6 +30,8 @@ Currently available data sets are:
 * [disgenenet](https://zenodo.org/records/10155817)
 * [email-enron](https://zenodo.org/records/10155819)
 * [email-eu](https://zenodo.org/records/10155823)
+* [eventernote-events](https://zenodo.org/records/11151063)
+* [eventernote-places](https://zenodo.org/records/11263394)
 * [hospital-lyon](https://zenodo.org/records/10155825)
 * [house-bills](https://zenodo.org/records/10957691)
 * [house-committees](https://zenodo.org/records/10957702)

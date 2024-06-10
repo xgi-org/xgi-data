@@ -1,7 +1,6 @@
 import os
 
 import utilities
-
 import xgi
 
 data_folder = "data"

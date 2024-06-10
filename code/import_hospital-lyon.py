@@ -2,7 +2,6 @@ from datetime import datetime, timedelta
 
 import networkx as nx
 import pandas as pd
-
 import xgi
 
 data_folder = "data"

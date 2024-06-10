@@ -3,7 +3,6 @@ from datetime import datetime, timedelta
 import networkx as nx
 import pandas as pd
 import utilities
-
 import xgi
 
 dataset_name = "InVS15"
