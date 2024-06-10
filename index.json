@@ -153,6 +153,34 @@
     "num-components": 20,
     "gc-size": 986
   },
+  "eventernote-events": {
+    "url": "https://zenodo.org/records/11151063/files/eventernote-events.json",
+    "num-nodes": 77343,
+    "num-edges": 350460,
+    "num-unique-edges": 141621,
+    "min-edge-size": 1,
+    "max-edge-size": 620,
+    "mean-edge-size": 5.92,
+    "min-degree": 0,
+    "max-degree": 1951,
+    "mean-degree": 26.84,
+    "num-components": 18,
+    "gc-size": 69885
+  },
+  "eventernote-places": {
+    "url": "https://zenodo.org/records/11263394/files/eventernote-places.json",
+    "num-nodes": 77343,
+    "num-edges": 13993,
+    "num-unique-edges": 11732,
+    "min-edge-size": 1,
+    "max-edge-size": 6420,
+    "mean-edge-size": 50.98,
+    "min-degree": 0,
+    "max-degree": 421,
+    "mean-degree": 9.22,
+    "num-components": 9,
+    "gc-size": 71698
+  },
   "hospital-lyon": {
     "url": "https://zenodo.org/records/10155825/files/hospital-lyon.json",
     "num-nodes": 75,
