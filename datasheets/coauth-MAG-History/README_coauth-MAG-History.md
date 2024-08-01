@@ -14,7 +14,7 @@ Some basic statistics of this dataset are:
 
 ## Changelog
 
-- v1.2: fixed year format #29 (@maximelucas, 1st Aug 2024)
+- v1.2: fixed year format with PR #31 https://github.com/xgi-org/xgi-data/pull/31 
 
 ## Source of original data
 
