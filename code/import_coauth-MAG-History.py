@@ -1,5 +1,6 @@
 import os
 
+import numpy as np
 import utilities
 import xgi
 
@@ -29,15 +30,15 @@ H["name"] = new_dataset_name
 delimiter = " "
 
 node_labels = utilities.readScHoLPLabels(node_labels_file, delimiter)
-edge_times = utilities.read_SCHOLP_dates(edge_times_file, time_unit="milliseconds")
+times = np.loadtxt(edge_times_file)
 
 H.add_nodes_from(list(node_labels.keys()))
 
 for label, name in node_labels.items():
     H.nodes[label].update({"name": name})
 
-for label, date in edge_times.items():
-    H.edges[label].update({"timestamp": date})
+for label, date in enumerate(times):
+    H.edges[label].update({"timestamp": int(date)})
 
 
 xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))
