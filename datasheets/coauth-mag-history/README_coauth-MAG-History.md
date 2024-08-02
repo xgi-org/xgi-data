@@ -12,6 +12,10 @@ Some basic statistics of this dataset are:
 * number of unique simplices: 895,668
 * number of edges in projected graph: 1,156,914
 
+## Changelog
+
+- v1.2: fixed year format with PR #31 https://github.com/xgi-org/xgi-data/pull/31 
+
 ## Source of original data
 
 Source: [coauth-MAG-History dataset](https://www.cs.cornell.edu/~arb/data/coauth-MAG-History/)
