@@ -21,7 +21,7 @@ All IDs are strings but can be converted to other types if desired.
 Currently available data sets are:
 * [coauth-dblp](https://zenodo.org/records/10155873)
 * [coauth-mag-geology](https://zenodo.org/records/10928443)
-* [coauth-mag-history](https://zenodo.org/records/10928551)
+* [coauth-mag-history](https://zenodo.org/records/13151009)
 * [congress-bills](https://zenodo.org/records/10928561)
 * [contact-high-school](https://zenodo.org/records/10155802)
 * [contact-primary-school](https://zenodo.org/records/10155810)
