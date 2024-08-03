@@ -1,16 +1,16 @@
 {
   "coauth-dblp": {
-    "url": "https://zenodo.org/records/10155873/files/coauth-DBLP.json",
+    "url": "https://zenodo.org/records/13203175/files/coauth-DBLP.json",
     "num-nodes": 1930378,
     "num-edges": 3700681,
-    "num-unique-edges": 2599087,
+    "num-unique-edges": 2467389,
     "min-edge-size": 1,
     "max-edge-size": 280,
     "mean-edge-size": 2.79,
     "min-degree": 1,
     "max-degree": 1425,
     "mean-degree": 5.35,
-    "num-components": 154294,
+    "num-components": 32,
     "gc-size": 1659954
   },
   "coauth-mag-geology": {

@@ -1,10 +1,14 @@
 import os
 
+import numpy as np
 import utilities
 import xgi
 
 data_folder = "data"
-dataset_name = "coauth-DBLP"
+dataset_name = "coauth-DBLP-full"
+
+new_dataset_name = "coauth-DBLP"
+
 
 dataset_folder = "coauth-DBLP-full"
 size_file = f"{dataset_name}-nverts.txt"
@@ -20,20 +24,20 @@ edge_times_file = os.path.join(data_folder, dataset_folder, times_file)
 edgelist = utilities.readScHoLPData(hyperedge_size_file, member_ID_file)
 
 H = xgi.Hypergraph(edgelist)
-H["name"] = dataset_name
+H["name"] = new_dataset_name
 
 delimiter = " "
 
 node_labels = utilities.readScHoLPLabels(node_labels_file, delimiter)
-edge_times = utilities.read_SCHOLP_dates(edge_times_file, time_unit="years")
+times = np.loadtxt(edge_times_file)
 
 H.add_nodes_from(list(node_labels.keys()))
 
 for label, name in node_labels.items():
     H.nodes[label].update({"name": name})
 
-for label, date in edge_times.items():
-    H.edges[label].update({"timestamp": date})
+for label, date in enumerate(times):
+    H.edges[label].update({"timestamp": int(date)})
 
 
-xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{dataset_name}.json"))
+xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))
