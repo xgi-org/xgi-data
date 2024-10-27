@@ -1,4 +1,5 @@
 import json
+
 import xgi
 
 data_folder = "data"
@@ -7,7 +8,7 @@ filename = "recipes_weighted_and_USDAmapped.json"
 new_dataset_name = "recipe-rec"
 
 with open(f"{data_folder}/{dataset_name}/{filename}") as file:
-        jsondata = json.loads(file.read())
+    jsondata = json.loads(file.read())
 
 H = xgi.Hypergraph()
 for entry in jsondata:
