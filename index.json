@@ -868,6 +868,20 @@
     "num-components": 13,
     "gc-size": 3414
   },
+  "recipe-rec": {
+    "url": "https://zenodo.org/records/14003376/files/recipe-rec.json",
+    "num-nodes": 9271,
+    "num-edges": 77733,
+    "num-unique-edges": 74870,
+    "min-edge-size": 1,
+    "max-edge-size": 28,
+    "mean-edge-size": 6.63,
+    "min-degree": 1,
+    "max-degree": 22956,
+    "mean-degree": 55.57,
+    "num-components": 4,
+    "gc-size": 9265
+  },
   "science-gallery": {
     "url": "https://zenodo.org/records/10206142/files/science-gallery.json",
     "data-type": "hypergraph",
