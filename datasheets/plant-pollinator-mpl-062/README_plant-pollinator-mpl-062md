@@ -1,0 +1,34 @@
+# plant-pollinator-mpl-062
+
+## Summary
+
+This is a hypergraph dataset where nodes are plants species, and hyperedges are pollinator species that visit a given plant. 
+
+
+Locality of study: Carlinville, Illinois, USA (latitude: 39.278958, longitude: -89.8968771).
+
+## Statistics
+Some basic statistics of this dataset are:
+* number of nodes: 456
+* number of hyperedges: 1,044
+* distribution of the connected components:
+<center>
+
+| Component Size  | Number |
+| ----- | ---- |
+| 456 | 1 |
+</center>
+
+* degree and edge size distributions:
+<center>
+<img src="stats.png" alt="hypergraph statistics" style="width:75%">
+</center>
+<figcaption align = "center"><b>Hypergraph degree and edge size distributions</b></figcaption>
+
+## Source of original data
+Source: [web-of-life](https://www.web-of-life.es/), dataset ID: M_PL_062.
+
+## References
+If you use this dataset, please cite these references:
+* Robertson, C. 1929. "Flowers and insects: lists of visitors to four hundred and fifty-three flowers". Carlinville, IL, USA, C. Robertson.
+
