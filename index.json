@@ -1,4 +1,7 @@
 {
+  "arxiv-kaggle": {
+    "url": "https://zenodo.org/records/15808027/files/arxiv.json"
+  },
   "coauth-dblp": {
     "url": "https://zenodo.org/records/13203175/files/coauth-DBLP.json",
     "data-type": "hypergraph",
