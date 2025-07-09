@@ -1,4 +1,18 @@
 {
+  "arxiv-kaggle": {
+    "url": "https://zenodo.org/records/15808027/files/arxiv.json",
+    "num-nodes": 1821977,
+    "num-edges": 2765236,
+    "num-unique-edges": 1986653,
+    "min-edge-size": 1,
+    "max-edge-size": 2811,
+    "mean-edge-size": 4.61,
+    "min-degree": 1,
+    "max-degree": 2591,
+    "mean-degree": 7.0,
+    "num-components": 63744,
+    "gc-size": 1694867
+  },
   "coauth-dblp": {
     "url": "https://zenodo.org/records/13203175/files/coauth-DBLP.json",
     "data-type": "hypergraph",
