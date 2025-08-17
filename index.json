@@ -133,21 +133,6 @@
     "num-components": 1,
     "gc-size": 516
   },
-  "disgenenet": {
-    "url": "https://zenodo.org/records/10155817/files/disgenenet.json",
-    "data-type": "hypergraph",
-    "num-nodes": 12368,
-    "num-edges": 2261,
-    "num-unique-edges": 2069,
-    "min-edge-size": 1,
-    "max-edge-size": 2453,
-    "mean-edge-size": 50.23,
-    "min-degree": 1,
-    "max-degree": 382,
-    "mean-degree": 9.18,
-    "num-components": 1,
-    "gc-size": 12368
-  },
   "email-enron": {
     "url": "https://zenodo.org/records/10155819/files/email-enron.json",
     "data-type": "hypergraph",
