@@ -1,4 +1,18 @@
 {
+  "a-blue-start": {
+    "url": "https://zenodo.org/records/19713302/files/deidentified_starterpack_hif.json",
+    "num-nodes": 2003536,
+    "num-edges": 365842,
+    "num-unique-edges": 356132,
+    "min-edge-size": 0,
+    "max-edge-size": 4069,
+    "mean-edge-size": 34.72,
+    "min-degree": 1,
+    "max-degree": 175159,
+    "mean-degree": 6.34,
+    "num-components": 409,
+    "gc-size": 1997488
+  },
   "arxiv-kaggle": {
     "url": "https://zenodo.org/records/15808027/files/arxiv.json",
     "num-nodes": 1821977,
