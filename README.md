@@ -25,6 +25,7 @@ Currently available data sets are:
 * [congress-bills](https://zenodo.org/records/10928561)
 * [contact-high-school](https://zenodo.org/records/10155802)
 * [contact-primary-school](https://zenodo.org/records/10155810)
+* [cs-cocitations](https://zenodo.org/records/19477689)
 * [dawn](https://zenodo.org/records/10155779)
 * [diseasome](https://zenodo.org/records/10155812)
 * [disgenenet](https://zenodo.org/records/10155817)

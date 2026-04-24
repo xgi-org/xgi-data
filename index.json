@@ -117,6 +117,9 @@
     "num-components": 1,
     "gc-size": 242
   },
+  "cs-cocitations": {                                 
+    "url": "https://zenodo.org/records/19477689/files/cs-cocitations.json"                                
+  },
   "dawn": {
     "url": "https://zenodo.org/records/10155779/files/dawn.json",
     "data-type": "hypergraph",
