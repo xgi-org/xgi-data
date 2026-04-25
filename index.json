@@ -117,8 +117,19 @@
     "num-components": 1,
     "gc-size": 242
   },
-  "cs-cocitations": {                                 
-    "url": "https://zenodo.org/records/19477689/files/cs-cocitations.json"                                
+  "cs-cocitations": {
+    "url": "https://zenodo.org/records/19477689/files/cs-cocitations.json",
+    "num-nodes": 3118,
+    "num-edges": 53886,
+    "num-unique-edges": 53886,
+    "min-edge-size": 2,
+    "max-edge-size": 17,
+    "mean-edge-size": 2.61,
+    "min-degree": 1,
+    "max-degree": 1672,
+    "mean-degree": 45.06,
+    "num-components": 2,
+    "gc-size": 3113
   },
   "dawn": {
     "url": "https://zenodo.org/records/10155779/files/dawn.json",
