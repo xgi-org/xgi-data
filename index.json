@@ -27,6 +27,20 @@
     "num-components": 63744,
     "gc-size": 1694867
   },
+  "biochem-cocitations": {
+    "url": "https://zenodo.org/records/20601519/files/biochem-cocitations.json",
+    "num-nodes": 8998,
+    "num-edges": 50289,
+    "num-unique-edges": 50289,
+    "min-edge-size": 2,
+    "max-edge-size": 26,
+    "mean-edge-size": 2.48,
+    "min-degree": 1,
+    "max-degree": 2219,
+    "mean-degree": 13.85,
+    "num-components": 40,
+    "gc-size": 8901
+  },
   "coauth-dblp": {
     "url": "https://zenodo.org/records/13203175/files/coauth-DBLP.json",
     "data-type": "hypergraph",
@@ -865,6 +879,20 @@
     "num-components": 2,
     "gc-size": 84
   },
+  "math-cocitations": {
+    "url": "https://zenodo.org/records/20601560/files/math-cocitations.json",
+    "num-nodes": 2972,
+    "num-edges": 17099,
+    "num-unique-edges": 17099,
+    "min-edge-size": 2,
+    "max-edge-size": 15,
+    "mean-edge-size": 2.56,
+    "min-degree": 1,
+    "max-degree": 165,
+    "mean-degree": 14.75,
+    "num-components": 8,
+    "gc-size": 2952
+  },
   "ndc-classes": {
     "url": "https://zenodo.org/records/10155772/files/ndc-classes.json",
     "data-type": "hypergraph",
@@ -894,6 +922,34 @@
     "mean-degree": 40.95,
     "num-components": 13,
     "gc-size": 3414
+  },
+  "neuro-cocitations": {
+    "url": "https://zenodo.org/records/20601541/files/neuro-cocitations.json",
+    "num-nodes": 4267,
+    "num-edges": 16771,
+    "num-unique-edges": 16771,
+    "min-edge-size": 2,
+    "max-edge-size": 77,
+    "mean-edge-size": 2.63,
+    "min-degree": 1,
+    "max-degree": 450,
+    "mean-degree": 10.32,
+    "num-components": 34,
+    "gc-size": 4155
+  },
+  "physics-cocitations": {
+    "url": "https://zenodo.org/records/20601460/files/physics-cocitations.json",
+    "num-nodes": 5347,
+    "num-edges": 42535,
+    "num-unique-edges": 42535,
+    "min-edge-size": 2,
+    "max-edge-size": 26,
+    "mean-edge-size": 2.68,
+    "min-degree": 1,
+    "max-degree": 414,
+    "mean-degree": 21.32,
+    "num-components": 19,
+    "gc-size": 5302
   },
   "plant-pollinator-mpl-014": {
     "url": "https://zenodo.org/records/14561179/files/plant-pollinator-mpl-014.json",
