@@ -19,6 +19,7 @@ All IDs are strings but can be converted to other types if desired.
 ## Data sets available on xgi-data
 
 Currently available data sets are:
+* [biochem-cocitations](https://zenodo.org/records/20601519)
 * [coauth-dblp](https://zenodo.org/records/10155873)
 * [coauth-mag-geology](https://zenodo.org/records/10928443)
 * [coauth-mag-history](https://zenodo.org/records/13151009)
@@ -42,8 +43,11 @@ Currently available data sets are:
 * [invs15](https://zenodo.org/records/10206154)
 * [kaggle-whats-cooking](https://zenodo.org/records/10157609)
 * [malawi-village](https://zenodo.org/records/10206147)
+* [math-cocitations](https://zenodo.org/records/20601560)
 * [ndc-classes](https://zenodo.org/records/10155772)
 * [ndc-substances](https://zenodo.org/records/10929019)
+* [neuro-cocitations](https://zenodo.org/records/20601541)
+* [physics-cocitations](https://zenodo.org/records/20601460)
 * [plant-pollinator-mpl-014](https://zenodo.org/records/14561179)
 * [plant-pollinator-mpl-015](https://zenodo.org/records/13754154)
 * [plant-pollinator-mpl-016](https://zenodo.org/records/13754237)
