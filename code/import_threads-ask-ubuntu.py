@@ -30,4 +30,4 @@ edge_times = utilities.read_SCHOLP_dates(edge_times_file, time_unit="millisecond
 for label, date in edge_times.items():
     H.edges[label].update({"timestamp": date})
 
-xgi.write_json(H, os.path.join(data_folder, dataset_folder, "threads-ask-ubuntu.json"))
+xgi.write_hif(H, os.path.join(data_folder, dataset_folder, "threads-ask-ubuntu.json"))

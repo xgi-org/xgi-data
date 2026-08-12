@@ -2,6 +2,7 @@ import json
 import os
 
 import pandas as pd
+import xgi
 
 data_folder = "data"
 
@@ -73,13 +74,11 @@ edge_dict[116525].remove("3668")
 # add info for node 30071
 node_data[30071] = {"name": "TOWA TEI", "kana": "ていとうわ", "initial": "て", "sex": 2}
 
-# save
+H = xgi.Hypergraph()
+H["name"] = "eventernote-events"
+H.add_nodes_from(node_data)
+H.set_node_attributes(node_data)
+H.add_edges_from(edge_dict)
+H.set_edge_attributes(edge_data)
 
-H = {"hypergraph-data": {"name": "eventernote-events"}}
-
-H["node-data"] = node_data
-H["edge-data"] = edge_data
-H["edge-dict"] = edge_dict
-
-with open(dest_path, "w") as f:
-    json.dump(H, f)
+xgi.write_hif(H, dest_path)

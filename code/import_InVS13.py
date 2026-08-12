@@ -36,4 +36,4 @@ for t in data["time"].unique():
     for e in nx.find_cliques(G):
         H.add_edge(e, timestamp=(start_time + time).isoformat())
 
-xgi.write_json(H, "data/InVS13/InVS13.json")
+xgi.write_hif(H, "data/InVS13/InVS13.json")

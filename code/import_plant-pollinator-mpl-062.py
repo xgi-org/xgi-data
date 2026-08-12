@@ -28,4 +28,4 @@ H.set_edge_attributes(pollinator_dict, name="pollinator")
 
 H["name"] = dataset_name
 
-xgi.write_json(H, f"{dataset_folder}{dataset_name}.json")
+xgi.write_hif(H, f"{dataset_folder}{dataset_name}.json")

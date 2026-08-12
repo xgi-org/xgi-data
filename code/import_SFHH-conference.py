@@ -34,4 +34,4 @@ for t in data["time"].unique():
         H.add_edge(e, timestamp=(start_time + time).isoformat())
 
 
-xgi.write_json(H, "data/SFHH/sfhh-conference.json")
+xgi.write_hif(H, "data/SFHH/sfhh-conference.json")
