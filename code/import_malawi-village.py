@@ -38,4 +38,4 @@ for t in data["time"].unique():
     print(sec)
 
 
-xgi.write_json(H, f"data/Malawi21/malawi-village.json")
+xgi.write_hif(H, f"data/Malawi21/malawi-village.json")

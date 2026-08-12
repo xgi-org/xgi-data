@@ -37,4 +37,4 @@ for i, e in enumerate(H.edges):
     H.edges[e].update({"name": edge_label_identities[int(edge_labels[i]) - 1]})
 
 
-xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))
+xgi.write_hif(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))

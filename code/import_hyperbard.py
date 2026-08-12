@@ -36,7 +36,7 @@ for play in play_type:
     H["play-type"] = play_type[play]
     collection[play] = H
 
-xgi.write_json_collection(
+xgi.write_hif_collection(
     collection,
     f"../{data_folder}/hyperbard_data/hyperbard",
     collection_name="hyperbard",

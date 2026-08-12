@@ -51,4 +51,4 @@ xgi.set_node_attributes(H, node_attr)
 H["name"] = "Diseasome"
 
 
-xgi.write_json(H, os.path.join(data_folder, dataset_folder, "diseasome.json"))
+xgi.write_hif(H, os.path.join(data_folder, dataset_folder, "diseasome.json"))

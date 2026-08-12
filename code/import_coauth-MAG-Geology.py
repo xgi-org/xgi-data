@@ -41,4 +41,4 @@ for label, date in enumerate(times):
     H.edges[label].update({"timestamp": int(date)})
 
 
-xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))
+xgi.write_hif(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))

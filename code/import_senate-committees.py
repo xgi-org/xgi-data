@@ -43,4 +43,4 @@ with open(affiliation_names_filepath) as label_data:
 for id, label in node_affiliation.items():
     H.nodes[str(id)].update({"affiliation": affiliation_names[int(label) - 1]})
 
-xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))
+xgi.write_hif(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))

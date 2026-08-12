@@ -37,4 +37,4 @@ for label, date in edge_times.items():
     H.edges[label].update({"timestamp": date})
 
 
-xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{dataset_name}.json"))
+xgi.write_hif(H, os.path.join(data_folder, dataset_folder, f"{dataset_name}.json"))
