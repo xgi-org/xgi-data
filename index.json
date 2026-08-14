@@ -868,7 +868,7 @@
     "gc-size": 3414
   },
   "plant-pollinator-mpl-014": {
-    "url": "https://zenodo.org/records/14561179/files/plant-pollinator-mpl-014.json",
+    "url": "https://zenodo.org/records/21937333/files/plant-pollinator-mpl-014.json",
     "num-nodes": 29,
     "num-edges": 81,
     "num-unique-edges": 49,
@@ -882,7 +882,7 @@
     "gc-size": 28
   },
   "plant-pollinator-mpl-015": {
-    "url": "https://zenodo.org/records/13754154/files/plant-pollinator-mpl-015.json",
+    "url": "https://zenodo.org/records/21937438/files/plant-pollinator-mpl-015.json",
     "num-nodes": 131,
     "num-edges": 666,
     "num-unique-edges": 477,
@@ -896,7 +896,7 @@
     "gc-size": 130
   },
   "plant-pollinator-mpl-016": {
-    "url": "https://zenodo.org/records/13754237/files/plant-pollinator-mpl-016.json",
+    "url": "https://zenodo.org/records/21938203/files/plant-pollinator-mpl-016.json",
     "num-nodes": 26,
     "num-edges": 179,
     "num-unique-edges": 93,
@@ -910,7 +910,7 @@
     "gc-size": 26
   },
   "plant-pollinator-mpl-021": {
-    "url": "https://zenodo.org/records/14561215/files/plant-pollinator-mpl-021.json",
+    "url": "https://zenodo.org/records/21938213/files/plant-pollinator-mpl-021.json",
     "num-nodes": 91,
     "num-edges": 677,
     "num-unique-edges": 207,
@@ -924,7 +924,7 @@
     "gc-size": 90
   },
   "plant-pollinator-mpl-034": {
-    "url": "https://zenodo.org/records/14561227/files/plant-pollinator-mpl-034.json",
+    "url": "https://zenodo.org/records/21938218/files/plant-pollinator-mpl-034.json",
     "num-nodes": 26,
     "num-edges": 128,
     "num-unique-edges": 63,
@@ -938,7 +938,7 @@
     "gc-size": 25
   },
   "plant-pollinator-mpl-044": {
-    "url": "https://zenodo.org/records/14561246/files/plant-pollinator-mpl-044.json",
+    "url": "https://zenodo.org/records/21938231/files/plant-pollinator-mpl-044.json",
     "num-nodes": 110,
     "num-edges": 609,
     "num-unique-edges": 251,
@@ -952,7 +952,7 @@
     "gc-size": 107
   },
   "plant-pollinator-mpl-046": {
-    "url": "https://zenodo.org/records/14561257/files/plant-pollinator-mpl-046.json",
+    "url": "https://zenodo.org/records/21938240/files/plant-pollinator-mpl-046.json",
     "num-nodes": 16,
     "num-edges": 44,
     "num-unique-edges": 42,
@@ -966,7 +966,7 @@
     "gc-size": 16
   },
   "plant-pollinator-mpl-049": {
-    "url": "https://zenodo.org/records/13754332/files/plant-pollinator-mpl-049.json",
+    "url": "https://zenodo.org/records/21938279/files/plant-pollinator-mpl-049.json",
     "num-nodes": 37,
     "num-edges": 225,
     "num-unique-edges": 118,
@@ -980,7 +980,7 @@
     "gc-size": 37
   },
   "plant-pollinator-mpl-057": {
-    "url": "https://zenodo.org/records/14561268/files/plant-pollinator-mpl-057.json",
+    "url": "https://zenodo.org/records/21938299/files/plant-pollinator-mpl-057.json",
     "num-nodes": 114,
     "num-edges": 883,
     "num-unique-edges": 319,
@@ -994,7 +994,7 @@
     "gc-size": 114
   },
   "plant-pollinator-mpl-062": {
-    "url": "https://zenodo.org/records/13753744/files/plant-pollinator-mpl-062.json",
+    "url": "https://zenodo.org/records/21938320/files/plant-pollinator-mpl-062.json",
     "num-nodes": 456,
     "num-edges": 1044,
     "num-unique-edges": 1008,
@@ -1022,7 +1022,7 @@
     "gc-size": 9265
   },
   "science-gallery": {
-    "url": "https://zenodo.org/records/10206142/files/science-gallery.json",
+    "url": "https://zenodo.org/records/21938382/files/science-gallery.json",
     "data-type": "hypergraph",
     "num-nodes": 10972,
     "num-edges": 338765,
@@ -1037,7 +1037,7 @@
     "gc-size": 410
   },
   "senate-bills": {
-    "url": "https://zenodo.org/records/10957697/files/senate-bills.json",
+    "url": "https://zenodo.org/records/21938408/files/senate-bills.json",
     "data-type": "hypergraph",
     "num-nodes": 294,
     "num-edges": 29157,
@@ -1052,7 +1052,7 @@
     "gc-size": 294
   },
   "senate-committees": {
-    "url": "https://zenodo.org/records/10957699/files/senate-committees.json",
+    "url": "https://zenodo.org/records/21938419/files/senate-committees.json",
     "data-type": "hypergraph",
     "num-nodes": 282,
     "num-edges": 315,
@@ -1067,7 +1067,7 @@
     "gc-size": 282
   },
   "sfhh-conference": {
-    "url": "https://zenodo.org/records/10198859/files/sfhh-conference.json",
+    "url": "https://zenodo.org/records/21938430/files/sfhh-conference.json",
     "data-type": "hypergraph",
     "num-nodes": 403,
     "num-edges": 54305,
@@ -1082,7 +1082,7 @@
     "gc-size": 403
   },
   "tags-ask-ubuntu": {
-    "url": "https://zenodo.org/records/10155835/files/tags-ask-ubuntu.json",
+    "url": "https://zenodo.org/records/21938441/files/tags-ask-ubuntu.json",
     "data-type": "hypergraph",
     "num-nodes": 3029,
     "num-edges": 271233,
@@ -1097,7 +1097,7 @@
     "gc-size": 3021
   },
   "tags-math-sx": {
-    "url": "https://zenodo.org/records/10155845/files/tags-math-sx.json",
+    "url": "https://zenodo.org/records/21938463/files/tags-math-sx.json",
     "data-type": "hypergraph",
     "num-nodes": 1629,
     "num-edges": 822059,
@@ -1112,7 +1112,7 @@
     "gc-size": 1627
   },
   "tags-stack-overflow": {
-    "url": "https://zenodo.org/records/10155885/files/tags-stack-overflow.json",
+    "url": "https://zenodo.org/records/21938788/files/tags-stack-overflow.json",
     "data-type": "hypergraph",
     "num-nodes": 49998,
     "num-edges": 14458875,
@@ -1127,7 +1127,7 @@
     "gc-size": 49931
   },
   "threads-ask-ubuntu": {
-    "url": "https://zenodo.org/records/10373311/files/threads-ask-ubuntu.json",
+    "url": "https://zenodo.org/records/21938799/files/threads-ask-ubuntu.json",
     "data-type": "hypergraph",
     "num-nodes": 125602,
     "num-edges": 192947,
@@ -1142,7 +1142,7 @@
     "gc-size": 82075
   },
   "threads-math-sx": {
-    "url": "https://zenodo.org/records/10373324/files/threads-math-sx.json",
+    "url": "https://zenodo.org/records/21938817/files/threads-math-sx.json",
     "data-type": "hypergraph",
     "num-nodes": 176445,
     "num-edges": 719792,
@@ -1157,7 +1157,7 @@
     "gc-size": 152702
   },
   "threads-stack-overflow": {
-    "url": "https://zenodo.org/records/10373328/files/threads-stack-overflow.json",
+    "url": "https://zenodo.org/records/21938825/files/threads-stack-overflow.json",
     "data-type": "hypergraph",
     "num-nodes": 2675969,
     "num-edges": 11305356,
