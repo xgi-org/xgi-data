@@ -42,7 +42,7 @@
     "gc-size": 8901
   },
   "coauth-dblp": {
-    "url": "https://zenodo.org/records/13203175/files/coauth-DBLP.json",
+    "url": "https://zenodo.org/records/21905305/files/coauth-dblp.json",
     "data-type": "hypergraph",
     "num-nodes": 1930378,
     "num-edges": 3700681,
@@ -57,7 +57,7 @@
     "gc-size": 1659954
   },
   "coauth-mag-geology": {
-    "url": "https://zenodo.org/records/10928443/files/coauth-MAG-Geology.json",
+    "url": "https://zenodo.org/records/21906243/files/coauth-mag-geology.json",
     "data-type": "hypergraph",
     "num-nodes": 1261129,
     "num-edges": 1591166,
@@ -72,7 +72,7 @@
     "gc-size": 903973
   },
   "coauth-mag-history": {
-    "url": "https://zenodo.org/records/13151009/files/coauth-MAG-History.json",
+    "url": "https://zenodo.org/records/21909251/files/coauth-mag-history.json",
     "data-type": "hypergraph",
     "num-nodes": 1034876,
     "num-edges": 1813147,
@@ -87,7 +87,7 @@
     "gc-size": 242048
   },
   "congress-bills": {
-    "url": "https://zenodo.org/records/10928561/files/congress-bills.json",
+    "url": "https://zenodo.org/records/21909280/files/congress-bills.json",
     "data-type": "hypergraph",
     "num-nodes": 1718,
     "num-edges": 282049,
@@ -102,7 +102,7 @@
     "gc-size": 1718
   },
   "contact-high-school": {
-    "url": "https://zenodo.org/records/10155802/files/contact-high-school.json",
+    "url": "https://zenodo.org/records/21909303/files/contact-high-school.json",
     "data-type": "hypergraph",
     "num-nodes": 327,
     "num-edges": 172035,
@@ -117,7 +117,7 @@
     "gc-size": 327
   },
   "contact-primary-school": {
-    "url": "https://zenodo.org/records/10155810/files/contact-primary-school.json",
+    "url": "https://zenodo.org/records/21909335/files/contact-primary-school.json",
     "data-type": "hypergraph",
     "num-nodes": 242,
     "num-edges": 106879,
@@ -146,7 +146,7 @@
     "gc-size": 3113
   },
   "dawn": {
-    "url": "https://zenodo.org/records/10155779/files/dawn.json",
+    "url": "https://zenodo.org/records/21909345/files/dawn.json",
     "data-type": "hypergraph",
     "num-nodes": 2558,
     "num-edges": 2272433,
@@ -161,7 +161,7 @@
     "gc-size": 2290
   },
   "diseasome": {
-    "url": "https://zenodo.org/records/10155812/files/diseasome.json",
+    "url": "https://zenodo.org/records/21909416/files/diseasome.json",
     "data-type": "hypergraph",
     "num-nodes": 516,
     "num-edges": 903,
@@ -176,7 +176,7 @@
     "gc-size": 516
   },
   "email-enron": {
-    "url": "https://zenodo.org/records/10155819/files/email-enron.json",
+    "url": "https://zenodo.org/records/21909507/files/email-enron.json",
     "data-type": "hypergraph",
     "num-nodes": 148,
     "num-edges": 10885,
@@ -191,7 +191,7 @@
     "gc-size": 143
   },
   "email-eu": {
-    "url": "https://zenodo.org/records/10155823/files/email-eu.json",
+    "url": "https://zenodo.org/records/21909519/files/email-eu.json",
     "data-type": "hypergraph",
     "num-nodes": 1005,
     "num-edges": 235263,
@@ -206,7 +206,7 @@
     "gc-size": 986
   },
   "eventernote-events": {
-    "url": "https://zenodo.org/records/11151063/files/eventernote-events.json",
+    "url": "https://zenodo.org/records/21917912/files/eventernote-events.json",
     "data-type": "hypergraph",
     "num-nodes": 77343,
     "num-edges": 350460,
@@ -221,7 +221,7 @@
     "gc-size": 69885
   },
   "eventernote-places": {
-    "url": "https://zenodo.org/records/11263394/files/eventernote-places.json",
+    "url": "https://zenodo.org/records/21917851/files/eventernote-places.json",
     "data-type": "hypergraph",
     "num-nodes": 77343,
     "num-edges": 13993,
@@ -236,7 +236,7 @@
     "gc-size": 71698
   },
   "hospital-lyon": {
-    "url": "https://zenodo.org/records/10155825/files/hospital-lyon.json",
+    "url": "https://zenodo.org/records/21935628/files/hospital-lyon.json",
     "data-type": "hypergraph",
     "num-nodes": 75,
     "num-edges": 27834,
@@ -251,7 +251,7 @@
     "gc-size": 75
   },
   "house-bills": {
-    "url": "https://zenodo.org/records/10957691/files/house-bills.json",
+    "url": "https://zenodo.org/uploads/21935645/files/house-bills.json",
     "data-type": "hypergraph",
     "num-nodes": 1494,
     "num-edges": 60987,
@@ -266,7 +266,7 @@
     "gc-size": 1494
   },
   "house-committees": {
-    "url": "https://zenodo.org/records/10957702/files/house-committees.json",
+    "url": "https://zenodo.org/records/21935676/files/house-committees.json",
     "data-type": "hypergraph",
     "num-nodes": 1290,
     "num-edges": 341,
