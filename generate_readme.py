@@ -1,17 +1,15 @@
-import argparse
 import json
 import re
 from pathlib import Path
 
-from matplotlib import lines
 
-index_file = Path("index.json")
-readme_file = Path("README.md")
+index_file = Path(__file__).parent / "index.json"
+readme_file = Path(__file__).parent / "README.md"
 
 HEADER = """
 # XGI-DATA
  
-This is a repository of openly available hypergraph datasets in JSON format with documentation more extensively describing the datasets. They are hosted in the [XGI Community](https://zenodo.org/communities/xgi) on Zenodo and a table of statistics can be found on [Read The Docs](https://xgi.readthedocs.io/en/stable/xgi-data.html). There is also a rudimentary inspection script for checking that datasets are in the proper format. This is loosely inspired by [Datasheets for Datasets](https://arxiv.org/abs/1803.09010) by Gebru et al. All datasets are stored in [Hypergraph Interchange Format (HIF)](https://github.com/HIF-org/HIF-standard).
+This is a repository of openly available hypergraph datasets in JSON format with documentation more extensively describing the datasets. They are hosted in the [XGI Community](https://zenodo.org/communities/xgi) on Zenodo and a table of statistics can be found on [Read The Docs](https://xgi.readthedocs.io/en/stable/xgi-data.html). This is loosely inspired by [Datasheets for Datasets](https://arxiv.org/abs/1803.09010) by Gebru et al. All datasets are stored in [Hypergraph Interchange Format (HIF)](https://github.com/HIF-org/HIF-standard).
 
 ## Data sets available on xgi-data
 
