@@ -2,6 +2,7 @@ import json
 import os
 
 import pandas as pd
+import xgi
 
 data_folder = "data"
 
@@ -97,16 +98,11 @@ edge_data[974] = {"place_name": "未定", "prefecture": "0"}
 edge_data[0] = {"place_name": "未定", "prefecture": "0"}
 
 # save
+H = xgi.Hypergraph()
+H["name"] = "eventernote-places"
+H.add_nodes_from(node_data)
+H.set_node_attributes(node_data)
+H.add_edges_from(edge_dict)
+H.set_edge_attributes(edge_data)
 
-H = {
-    "hypergraph-data": {
-        "name": new_dataset_name,
-    }
-}
-
-H["node-data"] = node_data
-H["edge-data"] = edge_data
-H["edge-dict"] = edge_dict
-
-with open(dest_path, "w") as f:
-    json.dump(H, f)
+xgi.write_hif(H, dest_path)

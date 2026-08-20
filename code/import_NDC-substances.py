@@ -34,4 +34,4 @@ for label, name in node_labels.items():
     H.nodes[label].update({"name": name})
 
 
-xgi.write_json(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))
+xgi.write_hif(H, os.path.join(data_folder, dataset_folder, f"{new_dataset_name}.json"))

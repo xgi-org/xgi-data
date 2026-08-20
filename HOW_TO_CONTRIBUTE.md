@@ -5,7 +5,7 @@
 ### Creating a JSON file for a dataset
 1. Create a script titled `import_<dataset name>.py`. Choose a dataset name that is concise, yet descriptive.
 2. Convert the raw data into an `xgi` hypergraph, using the above script. Examples of importing are in the [code](/code/) folder.
-3. Save the dataset to a JSON file using the `xgi.write_json()` [method](https://xgi.readthedocs.io/en/stable/api/readwrite/xgi.readwrite.json.html#module-xgi.readwrite.json).
+3. Save the dataset to a JSON file using the `xgi.write_hif()` [method](https://xgi.readthedocs.io/en/stable/api/readwrite/xgi.readwrite.json.html#module-xgi.readwrite.json).
 
 ### Adding to Zenodo
 1. Navigate to the [XGI page](https://zenodo.org/communities/xgi) on Zenodo.

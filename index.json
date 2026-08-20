@@ -42,7 +42,7 @@
     "gc-size": 8901
   },
   "coauth-dblp": {
-    "url": "https://zenodo.org/records/13203175/files/coauth-DBLP.json",
+    "url": "https://zenodo.org/records/21905305/files/coauth-dblp.json",
     "data-type": "hypergraph",
     "num-nodes": 1930378,
     "num-edges": 3700681,
@@ -57,7 +57,7 @@
     "gc-size": 1659954
   },
   "coauth-mag-geology": {
-    "url": "https://zenodo.org/records/10928443/files/coauth-MAG-Geology.json",
+    "url": "https://zenodo.org/records/21906243/files/coauth-mag-geology.json",
     "data-type": "hypergraph",
     "num-nodes": 1261129,
     "num-edges": 1591166,
@@ -72,7 +72,7 @@
     "gc-size": 903973
   },
   "coauth-mag-history": {
-    "url": "https://zenodo.org/records/13151009/files/coauth-MAG-History.json",
+    "url": "https://zenodo.org/records/21909251/files/coauth-mag-history.json",
     "data-type": "hypergraph",
     "num-nodes": 1034876,
     "num-edges": 1813147,
@@ -87,7 +87,7 @@
     "gc-size": 242048
   },
   "congress-bills": {
-    "url": "https://zenodo.org/records/10928561/files/congress-bills.json",
+    "url": "https://zenodo.org/records/21909280/files/congress-bills.json",
     "data-type": "hypergraph",
     "num-nodes": 1718,
     "num-edges": 282049,
@@ -102,7 +102,7 @@
     "gc-size": 1718
   },
   "contact-high-school": {
-    "url": "https://zenodo.org/records/10155802/files/contact-high-school.json",
+    "url": "https://zenodo.org/records/21909303/files/contact-high-school.json",
     "data-type": "hypergraph",
     "num-nodes": 327,
     "num-edges": 172035,
@@ -117,7 +117,7 @@
     "gc-size": 327
   },
   "contact-primary-school": {
-    "url": "https://zenodo.org/records/10155810/files/contact-primary-school.json",
+    "url": "https://zenodo.org/records/21909335/files/contact-primary-school.json",
     "data-type": "hypergraph",
     "num-nodes": 242,
     "num-edges": 106879,
@@ -146,7 +146,7 @@
     "gc-size": 3113
   },
   "dawn": {
-    "url": "https://zenodo.org/records/10155779/files/dawn.json",
+    "url": "https://zenodo.org/records/21909345/files/dawn.json",
     "data-type": "hypergraph",
     "num-nodes": 2558,
     "num-edges": 2272433,
@@ -161,7 +161,7 @@
     "gc-size": 2290
   },
   "diseasome": {
-    "url": "https://zenodo.org/records/10155812/files/diseasome.json",
+    "url": "https://zenodo.org/records/21909416/files/diseasome.json",
     "data-type": "hypergraph",
     "num-nodes": 516,
     "num-edges": 903,
@@ -176,7 +176,7 @@
     "gc-size": 516
   },
   "email-enron": {
-    "url": "https://zenodo.org/records/10155819/files/email-enron.json",
+    "url": "https://zenodo.org/records/21909507/files/email-enron.json",
     "data-type": "hypergraph",
     "num-nodes": 148,
     "num-edges": 10885,
@@ -191,7 +191,7 @@
     "gc-size": 143
   },
   "email-eu": {
-    "url": "https://zenodo.org/records/10155823/files/email-eu.json",
+    "url": "https://zenodo.org/records/21909519/files/email-eu.json",
     "data-type": "hypergraph",
     "num-nodes": 1005,
     "num-edges": 235263,
@@ -206,7 +206,7 @@
     "gc-size": 986
   },
   "eventernote-events": {
-    "url": "https://zenodo.org/records/11151063/files/eventernote-events.json",
+    "url": "https://zenodo.org/records/21917912/files/eventernote-events.json",
     "data-type": "hypergraph",
     "num-nodes": 77343,
     "num-edges": 350460,
@@ -221,7 +221,7 @@
     "gc-size": 69885
   },
   "eventernote-places": {
-    "url": "https://zenodo.org/records/11263394/files/eventernote-places.json",
+    "url": "https://zenodo.org/records/21917851/files/eventernote-places.json",
     "data-type": "hypergraph",
     "num-nodes": 77343,
     "num-edges": 13993,
@@ -236,7 +236,7 @@
     "gc-size": 71698
   },
   "hospital-lyon": {
-    "url": "https://zenodo.org/records/10155825/files/hospital-lyon.json",
+    "url": "https://zenodo.org/records/21935628/files/hospital-lyon.json",
     "data-type": "hypergraph",
     "num-nodes": 75,
     "num-edges": 27834,
@@ -251,7 +251,7 @@
     "gc-size": 75
   },
   "house-bills": {
-    "url": "https://zenodo.org/records/10957691/files/house-bills.json",
+    "url": "https://zenodo.org/uploads/21935645/files/house-bills.json",
     "data-type": "hypergraph",
     "num-nodes": 1494,
     "num-edges": 60987,
@@ -266,7 +266,7 @@
     "gc-size": 1494
   },
   "house-committees": {
-    "url": "https://zenodo.org/records/10957702/files/house-committees.json",
+    "url": "https://zenodo.org/records/21935676/files/house-committees.json",
     "data-type": "hypergraph",
     "num-nodes": 1290,
     "num-edges": 341,
@@ -281,11 +281,11 @@
     "gc-size": 1290
   },
   "hyperbard": {
-    "url": "https://zenodo.org/records/11211879/files/hyperbard_collection_information.json",
+    "url": "https://zenodo.org/records/21935772/files/hyperbard__collection_information.json",
     "data-type": "collection",
     "datasets": {
       "alls-well-that-ends-well": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_alls-well-that-ends-well.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_alls-well-that-ends-well.json",
         "num-nodes": 32,
         "num-edges": 87,
         "num-unique-edges": 67,
@@ -299,7 +299,7 @@
         "gc-size": 31
       },
       "a-midsummer-nights-dream": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_a-midsummer-nights-dream.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_a-midsummer-nights-dream.json",
         "num-nodes": 28,
         "num-edges": 92,
         "num-unique-edges": 73,
@@ -313,7 +313,7 @@
         "gc-size": 28
       },
       "antony-and-cleopatra": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_antony-and-cleopatra.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_antony-and-cleopatra.json",
         "num-nodes": 87,
         "num-edges": 168,
         "num-unique-edges": 131,
@@ -327,7 +327,7 @@
         "gc-size": 87
       },
       "as-you-like-it": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_as-you-like-it.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_as-you-like-it.json",
         "num-nodes": 30,
         "num-edges": 80,
         "num-unique-edges": 58,
@@ -341,7 +341,7 @@
         "gc-size": 30
       },
       "coriolanus": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_coriolanus.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_coriolanus.json",
         "num-nodes": 77,
         "num-edges": 151,
         "num-unique-edges": 130,
@@ -355,7 +355,7 @@
         "gc-size": 75
       },
       "cymbeline": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_cymbeline.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_cymbeline.json",
         "num-nodes": 47,
         "num-edges": 109,
         "num-unique-edges": 75,
@@ -369,7 +369,7 @@
         "gc-size": 41
       },
       "hamlet": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_hamlet.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_hamlet.json",
         "num-nodes": 41,
         "num-edges": 121,
         "num-unique-edges": 89,
@@ -383,7 +383,7 @@
         "gc-size": 41
       },
       "henry-iv-part-1": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_henry-iv-part-1.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_henry-iv-part-1.json",
         "num-nodes": 40,
         "num-edges": 99,
         "num-unique-edges": 74,
@@ -397,7 +397,7 @@
         "gc-size": 38
       },
       "henry-iv-part-2": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_henry-iv-part-2.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_henry-iv-part-2.json",
         "num-nodes": 60,
         "num-edges": 105,
         "num-unique-edges": 84,
@@ -411,7 +411,7 @@
         "gc-size": 56
       },
       "henry-viii": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_henry-viii.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_henry-viii.json",
         "num-nodes": 64,
         "num-edges": 74,
         "num-unique-edges": 65,
@@ -425,7 +425,7 @@
         "gc-size": 62
       },
       "henry-vi-part-1": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_henry-vi-part-1.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_henry-vi-part-1.json",
         "num-nodes": 81,
         "num-edges": 135,
         "num-unique-edges": 120,
@@ -439,7 +439,7 @@
         "gc-size": 78
       },
       "henry-vi-part-2": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_henry-vi-part-2.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_henry-vi-part-2.json",
         "num-nodes": 88,
         "num-edges": 130,
         "num-unique-edges": 115,
@@ -453,7 +453,7 @@
         "gc-size": 85
       },
       "henry-vi-part-3": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_henry-vi-part-3.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_henry-vi-part-3.json",
         "num-nodes": 67,
         "num-edges": 107,
         "num-unique-edges": 89,
@@ -467,7 +467,7 @@
         "gc-size": 67
       },
       "henry-v": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_henry-v.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_henry-v.json",
         "num-nodes": 58,
         "num-edges": 91,
         "num-unique-edges": 70,
@@ -481,7 +481,7 @@
         "gc-size": 57
       },
       "julius-caesar": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_julius-caesar.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_julius-caesar.json",
         "num-nodes": 60,
         "num-edges": 103,
         "num-unique-edges": 81,
@@ -495,7 +495,7 @@
         "gc-size": 60
       },
       "king-john": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_king-john.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_king-john.json",
         "num-nodes": 37,
         "num-edges": 67,
         "num-unique-edges": 59,
@@ -509,7 +509,7 @@
         "gc-size": 37
       },
       "king-lear": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_king-lear.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_king-lear.json",
         "num-nodes": 45,
         "num-edges": 124,
         "num-unique-edges": 94,
@@ -523,7 +523,7 @@
         "gc-size": 45
       },
       "loves-labors-lost": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_loves-labors-lost.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_loves-labors-lost.json",
         "num-nodes": 24,
         "num-edges": 64,
         "num-unique-edges": 48,
@@ -537,7 +537,7 @@
         "gc-size": 24
       },
       "macbeth": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_macbeth.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_macbeth.json",
         "num-nodes": 49,
         "num-edges": 114,
         "num-unique-edges": 76,
@@ -551,7 +551,7 @@
         "gc-size": 49
       },
       "measure-for-measure": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_measure-for-measure.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_measure-for-measure.json",
         "num-nodes": 32,
         "num-edges": 100,
         "num-unique-edges": 76,
@@ -565,7 +565,7 @@
         "gc-size": 32
       },
       "much-ado-about-nothing": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_much-ado-about-nothing.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_much-ado-about-nothing.json",
         "num-nodes": 29,
         "num-edges": 72,
         "num-unique-edges": 56,
@@ -579,7 +579,7 @@
         "gc-size": 29
       },
       "othello": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_othello.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_othello.json",
         "num-nodes": 34,
         "num-edges": 117,
         "num-unique-edges": 90,
@@ -593,7 +593,7 @@
         "gc-size": 33
       },
       "pericles": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_pericles.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_pericles.json",
         "num-nodes": 69,
         "num-edges": 96,
         "num-unique-edges": 78,
@@ -607,7 +607,7 @@
         "gc-size": 66
       },
       "richard-iii": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_richard-iii.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_richard-iii.json",
         "num-nodes": 69,
         "num-edges": 135,
         "num-unique-edges": 122,
@@ -621,7 +621,7 @@
         "gc-size": 65
       },
       "richard-ii": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_richard-ii.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_richard-ii.json",
         "num-nodes": 49,
         "num-edges": 77,
         "num-unique-edges": 72,
@@ -635,7 +635,7 @@
         "gc-size": 49
       },
       "romeo-and-juliet": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_romeo-and-juliet.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_romeo-and-juliet.json",
         "num-nodes": 50,
         "num-edges": 129,
         "num-unique-edges": 92,
@@ -649,7 +649,7 @@
         "gc-size": 49
       },
       "the-comedy-of-errors": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_the-comedy-of-errors.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_the-comedy-of-errors.json",
         "num-nodes": 24,
         "num-edges": 54,
         "num-unique-edges": 41,
@@ -663,7 +663,7 @@
         "gc-size": 24
       },
       "the-merchant-of-venice": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_the-merchant-of-venice.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_the-merchant-of-venice.json",
         "num-nodes": 33,
         "num-edges": 76,
         "num-unique-edges": 62,
@@ -677,7 +677,7 @@
         "gc-size": 33
       },
       "the-merry-wives-of-windsor": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_the-merry-wives-of-windsor.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_the-merry-wives-of-windsor.json",
         "num-nodes": 23,
         "num-edges": 147,
         "num-unique-edges": 99,
@@ -691,7 +691,7 @@
         "gc-size": 23
       },
       "the-taming-of-the-shrew": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_the-taming-of-the-shrew.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_the-taming-of-the-shrew.json",
         "num-nodes": 45,
         "num-edges": 119,
         "num-unique-edges": 103,
@@ -705,7 +705,7 @@
         "gc-size": 28
       },
       "the-tempest": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_the-tempest.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_the-tempest.json",
         "num-nodes": 22,
         "num-edges": 62,
         "num-unique-edges": 39,
@@ -719,7 +719,7 @@
         "gc-size": 22
       },
       "the-two-gentlemen-of-verona": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_the-two-gentlemen-of-verona.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_the-two-gentlemen-of-verona.json",
         "num-nodes": 19,
         "num-edges": 70,
         "num-unique-edges": 44,
@@ -733,7 +733,7 @@
         "gc-size": 19
       },
       "the-winters-tale": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_the-winters-tale.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_the-winters-tale.json",
         "num-nodes": 44,
         "num-edges": 71,
         "num-unique-edges": 63,
@@ -747,7 +747,7 @@
         "gc-size": 43
       },
       "timon-of-athens": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_timon-of-athens.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_timon-of-athens.json",
         "num-nodes": 76,
         "num-edges": 105,
         "num-unique-edges": 88,
@@ -761,7 +761,7 @@
         "gc-size": 76
       },
       "titus-andronicus": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_titus-andronicus.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_titus-andronicus.json",
         "num-nodes": 37,
         "num-edges": 83,
         "num-unique-edges": 72,
@@ -775,7 +775,7 @@
         "gc-size": 37
       },
       "troilus-and-cressida": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_troilus-and-cressida.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_troilus-and-cressida.json",
         "num-nodes": 40,
         "num-edges": 138,
         "num-unique-edges": 103,
@@ -789,7 +789,7 @@
         "gc-size": 39
       },
       "twelfth-night": {
-        "url": "https://zenodo.org/records/11211879/files/hyperbard_twelfth-night.json",
+        "url": "https://zenodo.org/records/21935772/files/hyperbard_twelfth-night.json",
         "num-nodes": 22,
         "num-edges": 96,
         "num-unique-edges": 71,
@@ -805,7 +805,7 @@
     }
   },
   "hypertext-conference": {
-    "url": "https://zenodo.org/records/10206136/files/hypertext-conference.json",
+    "url": "https://zenodo.org/records/21936138/files/hypertext-conference.json",
     "data-type": "hypergraph",
     "num-nodes": 113,
     "num-edges": 19036,
@@ -820,7 +820,7 @@
     "gc-size": 113
   },
   "invs13": {
-    "url": "https://zenodo.org/records/10206151/files/InVS13.json",
+    "url": "https://zenodo.org/records/21937109/files/invs13.json",
     "data-type": "hypergraph",
     "num-nodes": 92,
     "num-edges": 9644,
@@ -835,7 +835,7 @@
     "gc-size": 92
   },
   "invs15": {
-    "url": "https://zenodo.org/records/10206154/files/InVS15.json",
+    "url": "https://zenodo.org/records/21937140/files/invs15.json",
     "data-type": "hypergraph",
     "num-nodes": 232,
     "num-edges": 73822,
@@ -850,7 +850,7 @@
     "gc-size": 217
   },
   "kaggle-whats-cooking": {
-    "url": "https://zenodo.org/records/10157609/files/kaggle-whats-cooking.json",
+    "url": "https://zenodo.org/records/21937157/files/kaggle-whats-cooking.json",
     "data-type": "hypergraph",
     "num-nodes": 6714,
     "num-edges": 39774,
@@ -865,7 +865,7 @@
     "gc-size": 6714
   },
   "malawi-village": {
-    "url": "https://zenodo.org/records/10206147/files/malawi-village.json",
+    "url": "https://zenodo.org/records/21937170/files/malawi-village.json",
     "data-type": "hypergraph",
     "num-nodes": 86,
     "num-edges": 99942,
@@ -894,7 +894,7 @@
     "gc-size": 2952
   },
   "ndc-classes": {
-    "url": "https://zenodo.org/records/10155772/files/ndc-classes.json",
+    "url": "https://zenodo.org/records/21937180/files/ndc-classes.json",
     "data-type": "hypergraph",
     "num-nodes": 1161,
     "num-edges": 49726,
@@ -909,7 +909,7 @@
     "gc-size": 628
   },
   "ndc-substances": {
-    "url": "https://zenodo.org/records/10929019/files/NDC-substances.json",
+    "url": "https://zenodo.org/records/21937240/files/NDC-substances.json",
     "data-type": "hypergraph",
     "num-nodes": 5556,
     "num-edges": 112919,
@@ -952,7 +952,7 @@
     "gc-size": 5302
   },
   "plant-pollinator-mpl-014": {
-    "url": "https://zenodo.org/records/14561179/files/plant-pollinator-mpl-014.json",
+    "url": "https://zenodo.org/records/21937333/files/plant-pollinator-mpl-014.json",
     "num-nodes": 29,
     "num-edges": 81,
     "num-unique-edges": 49,
@@ -966,7 +966,7 @@
     "gc-size": 28
   },
   "plant-pollinator-mpl-015": {
-    "url": "https://zenodo.org/records/13754154/files/plant-pollinator-mpl-015.json",
+    "url": "https://zenodo.org/records/21937438/files/plant-pollinator-mpl-015.json",
     "num-nodes": 131,
     "num-edges": 666,
     "num-unique-edges": 477,
@@ -980,7 +980,7 @@
     "gc-size": 130
   },
   "plant-pollinator-mpl-016": {
-    "url": "https://zenodo.org/records/13754237/files/plant-pollinator-mpl-016.json",
+    "url": "https://zenodo.org/records/21938203/files/plant-pollinator-mpl-016.json",
     "num-nodes": 26,
     "num-edges": 179,
     "num-unique-edges": 93,
@@ -994,7 +994,7 @@
     "gc-size": 26
   },
   "plant-pollinator-mpl-021": {
-    "url": "https://zenodo.org/records/14561215/files/plant-pollinator-mpl-021.json",
+    "url": "https://zenodo.org/records/21938213/files/plant-pollinator-mpl-021.json",
     "num-nodes": 91,
     "num-edges": 677,
     "num-unique-edges": 207,
@@ -1008,7 +1008,7 @@
     "gc-size": 90
   },
   "plant-pollinator-mpl-034": {
-    "url": "https://zenodo.org/records/14561227/files/plant-pollinator-mpl-034.json",
+    "url": "https://zenodo.org/records/21938218/files/plant-pollinator-mpl-034.json",
     "num-nodes": 26,
     "num-edges": 128,
     "num-unique-edges": 63,
@@ -1022,7 +1022,7 @@
     "gc-size": 25
   },
   "plant-pollinator-mpl-044": {
-    "url": "https://zenodo.org/records/14561246/files/plant-pollinator-mpl-044.json",
+    "url": "https://zenodo.org/records/21938231/files/plant-pollinator-mpl-044.json",
     "num-nodes": 110,
     "num-edges": 609,
     "num-unique-edges": 251,
@@ -1036,7 +1036,7 @@
     "gc-size": 107
   },
   "plant-pollinator-mpl-046": {
-    "url": "https://zenodo.org/records/14561257/files/plant-pollinator-mpl-046.json",
+    "url": "https://zenodo.org/records/21938240/files/plant-pollinator-mpl-046.json",
     "num-nodes": 16,
     "num-edges": 44,
     "num-unique-edges": 42,
@@ -1050,7 +1050,7 @@
     "gc-size": 16
   },
   "plant-pollinator-mpl-049": {
-    "url": "https://zenodo.org/records/13754332/files/plant-pollinator-mpl-049.json",
+    "url": "https://zenodo.org/records/21938279/files/plant-pollinator-mpl-049.json",
     "num-nodes": 37,
     "num-edges": 225,
     "num-unique-edges": 118,
@@ -1064,7 +1064,7 @@
     "gc-size": 37
   },
   "plant-pollinator-mpl-057": {
-    "url": "https://zenodo.org/records/14561268/files/plant-pollinator-mpl-057.json",
+    "url": "https://zenodo.org/records/21938299/files/plant-pollinator-mpl-057.json",
     "num-nodes": 114,
     "num-edges": 883,
     "num-unique-edges": 319,
@@ -1078,7 +1078,7 @@
     "gc-size": 114
   },
   "plant-pollinator-mpl-062": {
-    "url": "https://zenodo.org/records/13753744/files/plant-pollinator-mpl-062.json",
+    "url": "https://zenodo.org/records/21938320/files/plant-pollinator-mpl-062.json",
     "num-nodes": 456,
     "num-edges": 1044,
     "num-unique-edges": 1008,
@@ -1106,7 +1106,7 @@
     "gc-size": 9265
   },
   "science-gallery": {
-    "url": "https://zenodo.org/records/10206142/files/science-gallery.json",
+    "url": "https://zenodo.org/records/21938382/files/science-gallery.json",
     "data-type": "hypergraph",
     "num-nodes": 10972,
     "num-edges": 338765,
@@ -1121,7 +1121,7 @@
     "gc-size": 410
   },
   "senate-bills": {
-    "url": "https://zenodo.org/records/10957697/files/senate-bills.json",
+    "url": "https://zenodo.org/records/21938408/files/senate-bills.json",
     "data-type": "hypergraph",
     "num-nodes": 294,
     "num-edges": 29157,
@@ -1136,7 +1136,7 @@
     "gc-size": 294
   },
   "senate-committees": {
-    "url": "https://zenodo.org/records/10957699/files/senate-committees.json",
+    "url": "https://zenodo.org/records/21938419/files/senate-committees.json",
     "data-type": "hypergraph",
     "num-nodes": 282,
     "num-edges": 315,
@@ -1151,7 +1151,7 @@
     "gc-size": 282
   },
   "sfhh-conference": {
-    "url": "https://zenodo.org/records/10198859/files/sfhh-conference.json",
+    "url": "https://zenodo.org/records/21938430/files/sfhh-conference.json",
     "data-type": "hypergraph",
     "num-nodes": 403,
     "num-edges": 54305,
@@ -1166,7 +1166,7 @@
     "gc-size": 403
   },
   "tags-ask-ubuntu": {
-    "url": "https://zenodo.org/records/10155835/files/tags-ask-ubuntu.json",
+    "url": "https://zenodo.org/records/21938441/files/tags-ask-ubuntu.json",
     "data-type": "hypergraph",
     "num-nodes": 3029,
     "num-edges": 271233,
@@ -1181,7 +1181,7 @@
     "gc-size": 3021
   },
   "tags-math-sx": {
-    "url": "https://zenodo.org/records/10155845/files/tags-math-sx.json",
+    "url": "https://zenodo.org/records/21938463/files/tags-math-sx.json",
     "data-type": "hypergraph",
     "num-nodes": 1629,
     "num-edges": 822059,
@@ -1196,7 +1196,7 @@
     "gc-size": 1627
   },
   "tags-stack-overflow": {
-    "url": "https://zenodo.org/records/10155885/files/tags-stack-overflow.json",
+    "url": "https://zenodo.org/records/21938788/files/tags-stack-overflow.json",
     "data-type": "hypergraph",
     "num-nodes": 49998,
     "num-edges": 14458875,
@@ -1211,7 +1211,7 @@
     "gc-size": 49931
   },
   "threads-ask-ubuntu": {
-    "url": "https://zenodo.org/records/10373311/files/threads-ask-ubuntu.json",
+    "url": "https://zenodo.org/records/21938799/files/threads-ask-ubuntu.json",
     "data-type": "hypergraph",
     "num-nodes": 125602,
     "num-edges": 192947,
@@ -1226,7 +1226,7 @@
     "gc-size": 82075
   },
   "threads-math-sx": {
-    "url": "https://zenodo.org/records/10373324/files/threads-math-sx.json",
+    "url": "https://zenodo.org/records/21938817/files/threads-math-sx.json",
     "data-type": "hypergraph",
     "num-nodes": 176445,
     "num-edges": 719792,
@@ -1241,7 +1241,7 @@
     "gc-size": 152702
   },
   "threads-stack-overflow": {
-    "url": "https://zenodo.org/records/10373328/files/threads-stack-overflow.json",
+    "url": "https://zenodo.org/records/21938825/files/threads-stack-overflow.json",
     "data-type": "hypergraph",
     "num-nodes": 2675969,
     "num-edges": 11305356,

@@ -38,4 +38,4 @@ for fname in sorted(os.listdir("data/ScienceGallery")):
         print(f"{fname} completed!")
 
 
-xgi.write_json(H, f"data/ScienceGallery/science-gallery.json")
+xgi.write_hif(H, f"data/ScienceGallery/science-gallery.json")
