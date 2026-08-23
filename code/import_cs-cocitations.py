@@ -21,18 +21,19 @@ Running this script will reproduce the XGI-compatible JSON file:
 import pickle
 from collections import defaultdict
 from datetime import datetime
+
 import xgi
 
 # ── Parameters ────────────────────────────────────────────────────────────────
-FIELD                   = "Computer Science"
-HYPERGRAPH_NAME         = "cs-cocitations"
-TOP_PROP                = 0.1    # top fraction by cumulative citations per subfield
-MIN_PUB_YEAR            = 1950
-MAX_PUB_YEAR            = 2024
-MIN_COCITATION_FREQ     = 3
-MAX_HYPEREDGE_SIZE      = float('inf')
+FIELD = "Computer Science"
+HYPERGRAPH_NAME = "cs-cocitations"
+TOP_PROP = 0.1  # top fraction by cumulative citations per subfield
+MIN_PUB_YEAR = 1950
+MAX_PUB_YEAR = 2024
+MIN_COCITATION_FREQ = 3
+MAX_HYPEREDGE_SIZE = float("inf")
 MIN_PAPERS_PER_SUBFIELD = 100
-OPENALEX_SNAPSHOT       = "OpenAlex Snapshot (2024-09-27)"
+OPENALEX_SNAPSHOT = "OpenAlex Snapshot (2024-09-27)"
 # ──────────────────────────────────────────────────────────────────────────────
 
 print(f"Loading raw data ({OPENALEX_SNAPSHOT}) ...")
@@ -55,7 +56,7 @@ print(f"  {len(subfields)} subfields found")
 invalid_titles = {"none", "", "deleted work"}
 work_subfield = {}
 for w_id, w in work_data.items():
-    pub_y = int(datetime.strptime(str(w["pub_d"]), '%Y-%m-%d').year)
+    pub_y = int(datetime.strptime(str(w["pub_d"]), "%Y-%m-%d").year)
     if pub_y < MIN_PUB_YEAR or pub_y > MAX_PUB_YEAR:
         continue
     title = w["title"]
@@ -90,7 +91,10 @@ for sf in subfields:
         cumulative += count
         if cumulative >= threshold:
             break
-    if len(selected) < MIN_PAPERS_PER_SUBFIELD and len(sorted_papers) >= MIN_PAPERS_PER_SUBFIELD:
+    if (
+        len(selected) < MIN_PAPERS_PER_SUBFIELD
+        and len(sorted_papers) >= MIN_PAPERS_PER_SUBFIELD
+    ):
         selected = [p[0] for p in sorted_papers[:MIN_PAPERS_PER_SUBFIELD]]
     top_works.extend(selected)
 
@@ -102,7 +106,7 @@ cocitation_freq = defaultdict(int)
 for w_id, w in work_data.items():
     if w_id in top_works:
         continue
-    pub_y = int(datetime.strptime(str(w["pub_d"]), '%Y-%m-%d').year)
+    pub_y = int(datetime.strptime(str(w["pub_d"]), "%Y-%m-%d").year)
     if pub_y < MIN_PUB_YEAR or pub_y > MAX_PUB_YEAR:
         continue
     cited_top = set(w["refs"]) & top_works
@@ -111,14 +115,16 @@ for w_id, w in work_data.items():
     cocitation_freq[tuple(sorted(cited_top))] += 1
 
 hyperedges = [e for e, freq in cocitation_freq.items() if freq >= MIN_COCITATION_FREQ]
-print(f"  {len(hyperedges):,} hyperedges (min co-citation freq = {MIN_COCITATION_FREQ})")
+print(
+    f"  {len(hyperedges):,} hyperedges (min co-citation freq = {MIN_COCITATION_FREQ})"
+)
 
 # ── Step 5: assign integer node indices (only nodes appearing in hyperedges) ──
 nodes_in_edges = set()
 for e in hyperedges:
     nodes_in_edges.update(e)
 
-node_list = sorted(nodes_in_edges)          # sorted OpenAlex IDs → deterministic ordering
+node_list = sorted(nodes_in_edges)  # sorted OpenAlex IDs → deterministic ordering
 paper_id_to_idx = {w_id: str(i) for i, w_id in enumerate(node_list)}
 
 # ── Step 6: build XGI Hypergraph ──────────────────────────────────────────────
@@ -136,22 +142,24 @@ for i, w_id in enumerate(node_list):
         num_invalid += 1
         continue
     pub_d = str(w["pub_d"])
-    node_data.append((
-        str(i),
-        {
-            "name":                w_id,
-            "openalex_id":         w_id,
-            "title":               w["title"],
-            "pub_date":            pub_d,
-            "year":                int(datetime.strptime(pub_d, '%Y-%m-%d').year),
-            "primary_topic_name":  pt["topic_name"],
-            "primary_subfield":    pt["subfield"]["display_name"],
-            "primary_field":       pt["field"]["display_name"],
-            "primary_domain":      pt["domain"]["display_name"],
-            "cited_by_count":      int(work_cited[w_id]),
-            "source":              OPENALEX_SNAPSHOT,
-        }
-    ))
+    node_data.append(
+        (
+            str(i),
+            {
+                "name": w_id,
+                "openalex_id": w_id,
+                "title": w["title"],
+                "pub_date": pub_d,
+                "year": int(datetime.strptime(pub_d, "%Y-%m-%d").year),
+                "primary_topic_name": pt["topic_name"],
+                "primary_subfield": pt["subfield"]["display_name"],
+                "primary_field": pt["field"]["display_name"],
+                "primary_domain": pt["domain"]["display_name"],
+                "cited_by_count": int(work_cited[w_id]),
+                "source": OPENALEX_SNAPSHOT,
+            },
+        )
+    )
 
 H.add_nodes_from(node_data)
 
