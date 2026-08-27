@@ -2,7 +2,6 @@ import json
 import re
 from pathlib import Path
 
-
 index_file = Path(__file__).parent / "index.json"
 readme_file = Path(__file__).parent / "README.md"
 

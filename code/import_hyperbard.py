@@ -34,6 +34,7 @@ for play in play_type:
     H.set_edge_attributes(n_tokens, name="n_tokens")
     H.set_edge_attributes(n_lines, name="n_lines")
     H["play-type"] = play_type[play]
+    H["name"] = play
     collection[play] = H
 
 xgi.write_hif_collection(
